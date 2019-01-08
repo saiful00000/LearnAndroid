@@ -27,17 +27,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="240dp"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationViewId"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorAccent">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rate Us"
-            />
+        app:menu="@menu/drawer_manu"
+        app:headerLayout="@layout/header">
 
-    </LinearLayout>
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

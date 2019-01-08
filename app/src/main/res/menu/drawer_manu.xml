@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_aboutAutherId"
+            android:title="About Auther" />
+        <item
+            android:id="@+id/nav_rateThisAppId"
+            android:title="Rate This App" />
+        <item
+            android:id="@+id/nav_contactUsId"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_shareId"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_appInfoId"
+            android:title="App Info" />
+    </group>
+
+</menu>
