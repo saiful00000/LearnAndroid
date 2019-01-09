@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_aboutAutherId"
-            android:title="About Auther" />
+            android:title="About Author" />
         <item
             android:id="@+id/nav_rateThisAppId"
             android:title="Rate This App" />

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Learn Android</string>
+
+    <string name="about_auther_string">
+        Proffession : Student\nUniversity  : Primeasia University\nSubject     : Computer Science and Engineering\nEmail       : saiful161003@gmail.com\nReligion    : Islam\nAge         : 23\n
+    </string>
+
 </resources>

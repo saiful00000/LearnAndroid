@@ -1,5 +1,6 @@
 package com.example.saifulislam.learnandroid;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -32,19 +33,30 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.nav_aboutAutherId:
-                        Toast.makeText(MainActivity.this, "About Aouther", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, AboutAuthor.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_shareId:
+                        Intent intent1 = new Intent(Intent.ACTION_SEND);
+                        intent1.setType("text/plain");
+                        intent1.putExtra(Intent.EXTRA_TEXT, "www.learnandroid.com");
+                        startActivity(intent1.createChooser(intent1, "Share"));
+                        break;
+                    case R.id.nav_contactUsId:
+                        Intent intent2 = new Intent(Intent.ACTION_SEND);
+                        intent2.setType("message/rfc822");
+                        intent2.putExtra(Intent.EXTRA_EMAIL, new String[]{"saiful161003@gmail.com"});
+                        intent2.putExtra(Intent.EXTRA_SUBJECT, "Learn Android");
+                        intent2.putExtra(Intent.EXTRA_TEXT, "I am a user of your app");
+                        startActivity(intent2.createChooser(intent2, "Send Mail"));
                         break;
                     case R.id.nav_appInfoId:
                         Toast.makeText(MainActivity.this, "App Info", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.nav_contactUsId:
-                        Toast.makeText(MainActivity.this, "Contact Us", Toast.LENGTH_SHORT).show();
-                        break;
                     case R.id.nav_rateThisAppId:
                         Toast.makeText(MainActivity.this, "Rate This App", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.nav_shareId:
-                        Toast.makeText(MainActivity.this, "Share App", Toast.LENGTH_SHORT).show();
+
                 }
                 return false;
             }
