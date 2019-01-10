@@ -9,8 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.Toolbar;
+
+import com.example.saifulislam.learnandroid.adapters.MainListViewdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     ActionBarDrawerToggle actionBarDrawerToggle;
 
     NavigationView navigationView;
+
+    ListView mainListview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        mainListview = findViewById(R.id.mainListViewId);
+        String[] contents = getResources().getStringArray(R.array.content_list);
+        int[] icons = {R.drawable.main_widget, R.drawable.main_intent,R.drawable.main_container, R.drawable.main_menu,
+                        R.drawable.main_datetime,R.drawable.main_animation, R.drawable.main_audio,
+                        R.drawable.main_video, R.drawable.main_camera, R.drawable.main_fragment,R.drawable.main_map,
+                        R.drawable.main_sqlite, R.drawable.main_toast};
+        MainListViewdapter mainListViewdapter = new MainListViewdapter(this, contents, icons);
+        mainListview.setAdapter(mainListViewdapter);
     }
 
     private void setUpToolbar() {

@@ -2,7 +2,22 @@
     <string name="app_name">Learn Android</string>
 
     <string name="about_auther_string">
-        Proffession : Student\nUniversity  : Primeasia University\nSubject     : Computer Science and Engineering\nEmail       : saiful161003@gmail.com\nReligion    : Islam\nAge         : 23\n
-    </string>
+        Proffession : Student\nUniversity  : Primeasia University\nSubject     : Computer Science and Engineering\nEmail       : saiful161003@gmail.com\nReligion    : Islam\nAge         : 23\n</string>
+
+    <string-array name="content_list">
+        <item>Common UI Widgets</item>
+        <item>Intent</item>
+        <item>Conteiners</item>
+        <item>Menu</item>
+        <item>Date Time</item>
+        <item>Animation</item>
+        <item>Aoudio</item>
+        <item>Video</item>
+        <item>Camera</item>
+        <item>Fragment</item>
+        <item>Map</item>
+        <item>SQlite</item>
+        <item>Toast</item>
+    </string-array>
 
 </resources>

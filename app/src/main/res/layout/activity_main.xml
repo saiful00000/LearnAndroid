@@ -15,15 +15,19 @@
             android:id="@+id/tolbarId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorViolate"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         </android.support.v7.widget.Toolbar>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello world" />
+        <ListView
+            android:id="@+id/mainListViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="4dp"
+            android:padding="4dp">
+        </ListView>
 
     </LinearLayout>
 
