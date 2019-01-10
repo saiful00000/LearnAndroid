@@ -45,11 +45,11 @@ public class MainListViewdapter extends BaseAdapter {
         if (convertView == null) {
             layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.custom_list_view, parent, false);
-            TextView textView = convertView.findViewById(R.id.customListTextId);
-            ImageView imageView = convertView.findViewById(R.id.customListImageId);
-            textView.setText(contents[position]);
-            imageView.setImageResource(icons[position]);
         }
+        TextView textView = convertView.findViewById(R.id.customListTextId);
+        ImageView imageView = convertView.findViewById(R.id.customListImageId);
+        textView.setText(contents[position]);
+        imageView.setImageResource(icons[position]);
         return convertView;
     }
 }

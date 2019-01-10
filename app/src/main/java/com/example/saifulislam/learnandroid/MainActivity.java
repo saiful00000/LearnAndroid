@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainListview = findViewById(R.id.mainListViewId);
-        String[] contents = getResources().getStringArray(R.array.content_list);
+        final String[] contents = getResources().getStringArray(R.array.content_list);
         int[] icons = {R.drawable.main_widget, R.drawable.main_intent,R.drawable.main_container, R.drawable.main_menu,
                         R.drawable.main_datetime,R.drawable.main_animation, R.drawable.main_audio,
                         R.drawable.main_video, R.drawable.main_camera, R.drawable.main_fragment,R.drawable.main_map,
