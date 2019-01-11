@@ -16,7 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutAuthor"></activity>
+        <activity android:name=".AboutAuthor" />
+        <activity android:name=".CommonWidgetActivity" />
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".ContainerActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".DateTimeActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".AodioActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".SQLiteActivity" />
+        <activity android:name=".ToastActivity"></activity>
     </application>
 
 </manifest>

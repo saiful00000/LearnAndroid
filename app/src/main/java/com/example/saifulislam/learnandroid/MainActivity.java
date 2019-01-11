@@ -9,11 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 import com.example.saifulislam.learnandroid.adapters.MainListViewdapter;
 
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         intent2.putExtra(Intent.EXTRA_EMAIL, new String[]{"saiful161003@gmail.com"});
                         intent2.putExtra(Intent.EXTRA_SUBJECT, "Learn Android");
                         intent2.putExtra(Intent.EXTRA_TEXT, "I am a user of your app");
-                        startActivity(intent2.createChooser(intent2, "Send Mail"));
+                        startActivity(Intent.createChooser(intent2, "Send Mail"));
                         break;
                     case R.id.nav_appInfoId:
                         Toast.makeText(MainActivity.this, "App Info", Toast.LENGTH_SHORT).show();
@@ -87,49 +86,64 @@ public class MainActivity extends AppCompatActivity {
 
     // method for response main activity Listview onitemclick listenner
     public void itemClickHelper(int position) {
+        Intent intent;
         switch (position) {
             case 0:
-                Toast.makeText(this, "Widget", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, CommonWidgetActivity.class);
+                startActivity(intent);
                 break;
             case 1:
-                Toast.makeText(this, "Intent", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, IntentActivity.class);
+                startActivity(intent);
                 break;
             case 2:
-                Toast.makeText(this, "Containers", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, ContainerActivity.class);
+                startActivity(intent);
                 break;
             case 3:
-                Toast.makeText(this, "Menu", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intent);
                 break;
             case 4:
-                Toast.makeText(this, "Date Time", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, DateTimeActivity.class);
+                startActivity(intent);
                 break;
             case 5:
-                Toast.makeText(this, "Animation", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, AnimationActivity.class);
+                startActivity(intent);
                 break;
             case 6:
-                Toast.makeText(this, "Audio", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, AodioActivity.class);
+                startActivity(intent);
                 break;
             case 7:
-                Toast.makeText(this, "Video", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, VideoActivity.class);
+                startActivity(intent);
                 break;
             case 8:
-                Toast.makeText(this, "Camera", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, CameraActivity.class);
+                startActivity(intent);
                 break;
             case 9:
-                Toast.makeText(this, "Fragment", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent);
                 break;
             case 10:
-                Toast.makeText(this, "Map", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent);
                 break;
             case 11:
-                Toast.makeText(this, "SQLite", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, SQLiteActivity.class);
+                startActivity(intent);
                 break;
             case 12:
-                Toast.makeText(this, "Toast", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, ToastActivity.class);
+                startActivity(intent);
                 break;
         }
 
     }
+
 
     private void setUpToolbar() {
         drawerLayout = findViewById(R.id.drawerLayoutId);
