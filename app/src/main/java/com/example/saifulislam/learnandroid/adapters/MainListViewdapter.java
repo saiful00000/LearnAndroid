@@ -13,9 +13,9 @@ import com.example.saifulislam.learnandroid.R;
 
 public class MainListViewdapter extends BaseAdapter {
 
-    private Context context;
-    private String[] contents;
-    private int[] icons;
+    Context context;
+    String[] contents;
+    int[] icons;
 
     LayoutInflater layoutInflater;
 
