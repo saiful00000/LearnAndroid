@@ -5,15 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".CommonWidgetActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tolbarId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Common Widgets"
-        style="@style/Base.TextAppearance.AppCompat.Body1"
-        android:textSize="30dp"
-        />
+        android:background="@color/colorViolate"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/widgetsListViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="4dp"
+            android:padding="4dp">
+        </ListView>
+
+    </LinearLayout>
 
 </LinearLayout>

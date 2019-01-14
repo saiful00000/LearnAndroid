@@ -20,4 +20,21 @@
         <item>Toast</item>
     </string-array>
 
+    <string-array name="common_widget_list">
+        <item>TextView</item>
+        <item>EditText</item>
+        <item>Button</item>
+        <item>ImageButton</item>
+        <item>Switch</item>
+        <item>CheckBox</item>
+        <item>AlertDialog</item>
+        <item>ScrollView</item>
+        <item>ProgressBar</item>
+        <item>Seekbar</item>
+        <item>RadioButton</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
