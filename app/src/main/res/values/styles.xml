@@ -9,4 +9,14 @@
     </style>
 
 
+    <style name="HeaderBar">
+        <item name="android:background">@color/colorViolate</item>
+    </style>
+
+    <style name="myToolbarTheam"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        ....
+        <item name="colorControlNormal">#ffff</item>
+    </style>
+
+
 </resources>

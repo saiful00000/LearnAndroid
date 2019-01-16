@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RadioButtonActivity"></activity>
+        <activity android:name=".SeekBarActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".SwitchActivity" />
+        <activity android:name=".ImageButtonActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".TextViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +40,7 @@
         <activity android:name=".FragmentActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".SQLiteActivity" />
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".ToastActivity" />
     </application>
 
 </manifest>
