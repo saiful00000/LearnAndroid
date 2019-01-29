@@ -9,17 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RadioButtonActivity"></activity>
-        <activity android:name=".SeekBarActivity" />
-        <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".ScrollViewActivity" />
-        <activity android:name=".AlertDialogActivity" />
-        <activity android:name=".CheckBoxActivity" />
-        <activity android:name=".SwitchActivity" />
-        <activity android:name=".ImageButtonActivity" />
-        <activity android:name=".ButtonActivity" />
-        <activity android:name=".EditTextActivity" />
-        <activity android:name=".TextViewActivity" />
+        <activity
+            android:name=".RadioButtonActivity"
+            android:label="RadioButton"/>
+        <activity
+            android:name=".SeekBarActivity"
+            android:label="Seekbar" />
+        <activity
+            android:name=".ProgressBarActivity"
+            android:label="ProgressBar" />
+        <activity
+            android:name=".ScrollViewActivity"
+            android:label="ScrollView" />
+        <activity
+            android:name=".AlertDialogActivity"
+            android:label="AlertDialog" />
+        <activity
+            android:name=".CheckBoxActivity"
+            android:label="CheckBox" />
+        <activity
+            android:name=".SwitchActivity"
+            android:label="Switch" />
+        <activity
+            android:name=".ImageButtonActivity"
+            android:label="ImageButton" />
+        <activity
+            android:name=".ButtonActivity"
+            android:label="Button" />
+        <activity
+            android:name=".EditTextActivity"
+            android:label="EditText" />
+        <activity
+            android:name=".TextViewActivity"
+            android:label="TextView" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +50,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".AboutAuthor" />
-        <activity android:name=".CommonWidgetActivity" />
+        <activity
+            android:name=".CommonWidgetActivity"
+            android:label="CommonWidget" />
         <activity android:name=".IntentActivity" />
         <activity android:name=".ContainerActivity" />
         <activity android:name=".MenuActivity" />

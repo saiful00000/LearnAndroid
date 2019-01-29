@@ -23,17 +23,8 @@ public class CommonWidgetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_widget);
 
-        //toolbar
-        toolbar = findViewById(R.id.my_toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setTitleTextColor(Color.WHITE);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        // setup the toolbar
+        setUpTheToolbar();
 
 
         listView = findViewById(R.id.widgetsListViewId);
@@ -52,6 +43,7 @@ public class CommonWidgetActivity extends AppCompatActivity {
 
     }
 
+    // listview itemclick listener
     private void itemClickHelper(int position) {
         Intent intent;
         switch (position) {
@@ -109,4 +101,19 @@ public class CommonWidgetActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.other_activity_manu, menu);
         return true;
     }
+
+    //setup The toolbar
+    private void setUpTheToolbar() {
+        toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+    }
+
 }
