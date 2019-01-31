@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".RadioButtonActivity"
-            android:label="RadioButton"/>
+            android:label="RadioButton" />
         <activity
             android:name=".SeekBarActivity"
             android:label="Seekbar" />
@@ -53,18 +53,42 @@
         <activity
             android:name=".CommonWidgetActivity"
             android:label="CommonWidget" />
-        <activity android:name=".IntentActivity" />
-        <activity android:name=".ContainerActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".DateTimeActivity" />
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".AodioActivity" />
-        <activity android:name=".VideoActivity" />
-        <activity android:name=".CameraActivity" />
-        <activity android:name=".FragmentActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".SQLiteActivity" />
-        <activity android:name=".ToastActivity" />
+        <activity
+            android:name=".IntentActivity"
+            android:label="Intent" />
+        <activity
+            android:name=".ContainerActivity"
+            android:label="Container" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu" />
+        <activity
+            android:name=".DateTimeActivity"
+            android:label="DateTime" />
+        <activity
+            android:name=".AnimationActivity"
+            android:label="Animation" />
+        <activity
+            android:name=".AodioActivity"
+            android:label="Audio" />
+        <activity
+            android:name=".VideoActivity"
+            android:label="Video" />
+        <activity
+            android:name=".CameraActivity"
+            android:label="Camera" />
+        <activity
+            android:name=".FragmentActivity"
+            android:label="Fragment" />
+        <activity
+            android:name=".MapActivity"
+            android:label="Map" />
+        <activity
+            android:name=".SQLiteActivity"
+            android:label="SQLite" />
+        <activity
+            android:name=".ToastActivity"
+            android:label="Toast" />
     </application>
 
 </manifest>

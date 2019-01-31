@@ -32,4 +32,5 @@ public class RadioButtonActivity extends AppCompatActivity {
             }
         });
     }
+
 }
