@@ -1,14 +1,19 @@
 package com.example.saifulislam.learnandroid;
 
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 public class TextViewActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
+    private Toolbar toolbar;
+    FloatingActionButton fabe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +23,24 @@ public class TextViewActivity extends AppCompatActivity {
         // setup the toolbar
         setUpTheToolbar();
 
+        fabe = findViewById(R.id.fab);
 
+
+        fabe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(TextViewActivity.this, "Toast", Toast.LENGTH_SHORT).show();
+                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
+
+
+
     //setup the toolbar
-    public void setUpTheToolbar() {
+    private void setUpTheToolbar() {
         //toolbar
         toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
