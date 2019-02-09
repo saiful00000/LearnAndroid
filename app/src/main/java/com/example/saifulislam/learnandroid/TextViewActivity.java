@@ -1,5 +1,6 @@
 package com.example.saifulislam.learnandroid;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
@@ -29,9 +30,11 @@ public class TextViewActivity extends AppCompatActivity {
         fabe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(TextViewActivity.this, "Toast", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(TextViewActivity.this, TextViewCode.class);
+                startActivity(intent);
+                /*Toast.makeText(TextViewActivity.this, "Toast", Toast.LENGTH_SHORT).show();
                 Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                        .setAction("Action", null).show();*/
             }
         });
     }
