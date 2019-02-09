@@ -31,43 +31,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setUpToolbar();
+        //setup the toolbar
+        setUpTheToolbar();
+
+        //set the list view
+        setTheListView();
 
         navigationView = findViewById(R.id.navigationViewId);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.nav_aboutAutherId:
-                        Intent intent = new Intent(MainActivity.this, AboutAuthor.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.nav_shareId:
-                        Intent intent1 = new Intent(Intent.ACTION_SEND);
-                        intent1.setType("text/plain");
-                        intent1.putExtra(Intent.EXTRA_TEXT, "www.learnandroid.com");
-                        startActivity(Intent.createChooser(intent1, "Share"));
-                        break;
-                    case R.id.nav_contactUsId:
-                        Intent intent2 = new Intent(Intent.ACTION_SEND);
-                        intent2.setType("message/rfc822");
-                        intent2.putExtra(Intent.EXTRA_EMAIL, new String[]{"saiful161003@gmail.com"});
-                        intent2.putExtra(Intent.EXTRA_SUBJECT, "Learn Android");
-                        intent2.putExtra(Intent.EXTRA_TEXT, "I am a user of your app");
-                        startActivity(Intent.createChooser(intent2, "Send Mail"));
-                        break;
-                    case R.id.nav_appInfoId:
-                        Toast.makeText(MainActivity.this, "App Info", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.nav_rateThisAppId:
-                        Toast.makeText(MainActivity.this, "Rate This App", Toast.LENGTH_SHORT).show();
-                        break;
+        navigationView.setNavigationItemSelectedListener(listener);
 
-                }
-                return false;
-            }
-        });
 
+    }
+
+
+    //set the list view
+    private void setTheListView() {
         mainListview = findViewById(R.id.mainListViewId);
         final String[] contents = getResources().getStringArray(R.array.content_list);
         int[] icons = {R.drawable.main_widget, R.drawable.main_intent, R.drawable.main_container, R.drawable.main_menu,
@@ -83,6 +61,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    // configure Navigation Drawer On item select listener
+    private NavigationView.OnNavigationItemSelectedListener listener = new NavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            switch (menuItem.getItemId()) {
+                case R.id.nav_aboutAutherId:
+                    Intent intent = new Intent(MainActivity.this, AboutAuthor.class);
+                    startActivity(intent);
+                    break;
+                case R.id.nav_shareId:
+                    Intent intent1 = new Intent(Intent.ACTION_SEND);
+                    intent1.setType("text/plain");
+                    intent1.putExtra(Intent.EXTRA_TEXT, "www.learnandroid.com");
+                    startActivity(Intent.createChooser(intent1, "Share"));
+                    break;
+                case R.id.nav_contactUsId:
+                    Intent intent2 = new Intent(Intent.ACTION_SEND);
+                    intent2.setType("message/rfc822");
+                    intent2.putExtra(Intent.EXTRA_EMAIL, new String[]{"saiful161003@gmail.com"});
+                    intent2.putExtra(Intent.EXTRA_SUBJECT, "Learn Android");
+                    intent2.putExtra(Intent.EXTRA_TEXT, "I am a user of your app");
+                    startActivity(Intent.createChooser(intent2, "Send Mail"));
+                    break;
+                case R.id.nav_appInfoId:
+                    Toast.makeText(MainActivity.this, "App Info", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.nav_rateThisAppId:
+                    Toast.makeText(MainActivity.this, "Rate This App", Toast.LENGTH_SHORT).show();
+                    break;
+
+            }
+            return false;
+        }
+    };
 
     // method for response main activity Listview onitemclick listenner
     public void itemClickHelper(int position) {
@@ -145,7 +158,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void setUpToolbar() {
+    //setup the toolbar
+    private void setUpTheToolbar() {
         drawerLayout = findViewById(R.id.drawerLayoutId);
         toolbar = findViewById(R.id.tolbarId);
 
