@@ -1,6 +1,8 @@
 package com.example.saifulislam.learnandroid;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -162,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
     private void setUpTheToolbar() {
         drawerLayout = findViewById(R.id.drawerLayoutId);
         toolbar = findViewById(R.id.tolbarId);
-
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

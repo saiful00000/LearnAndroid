@@ -14,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
         style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
+        android:theme="@style/DrawerArrowStyle"
         >
     </android.support.v7.widget.Toolbar>
 

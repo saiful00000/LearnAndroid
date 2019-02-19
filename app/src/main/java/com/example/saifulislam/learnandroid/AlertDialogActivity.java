@@ -23,8 +23,9 @@ public class AlertDialogActivity extends AppCompatActivity {
     private void setUptheToolbar() {
         toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setTitleTextColor(Color.BLACK);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp); // change back arrow color
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,14 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Java">
+    tools:context=".fragments.Java"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:gravity="center"
-        android:textSize="30sp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Java Fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        />
+    <io.github.kbiakov.codeview.CodeView
+        android:id="@+id/textViewCodeViewjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </io.github.kbiakov.codeview.CodeView>
+
 
 </LinearLayout>

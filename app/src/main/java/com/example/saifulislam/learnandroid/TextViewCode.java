@@ -1,25 +1,40 @@
 package com.example.saifulislam.learnandroid;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
+import android.view.View;
 
+import com.example.saifulislam.learnandroid.Codes.CodeJava;
+import com.example.saifulislam.learnandroid.Codes.CodeManifest;
+import com.example.saifulislam.learnandroid.Codes.CodeXML;
 import com.example.saifulislam.learnandroid.fragments.Java;
 import com.example.saifulislam.learnandroid.fragments.Manifesto;
 import com.example.saifulislam.learnandroid.fragments.XML;
 
 public class TextViewCode extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
+    private Toolbar toolbar;
+    private BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view_code);
+
+        //set up the toolbar
+        setUpTheToolbar();
+
+        // pass java,xml and manifest code to fragments
+        Java.cdJava = CodeJava.textViewJava;
+        XML.cdXML = CodeXML.textViewXML;
+        Manifesto.cdMan = CodeManifest.textViewMan;
 
         //set defoult fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Java()).commit();
@@ -50,4 +65,20 @@ public class TextViewCode extends AppCompatActivity {
                     return true;
                 }
             };
+
+    //setup the toolbar
+    private void setUpTheToolbar() {
+        toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.BLACK);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);                            // back arrow button (eneble)
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);  // chage arrow color or set spacific icon
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+    }
+
 }

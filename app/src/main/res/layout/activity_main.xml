@@ -15,8 +15,8 @@
             android:id="@+id/tolbarId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorViolate"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            style="@style/HeaderBar"
+            android:theme="@style/DrawerArrowStyle">
 
         </android.support.v7.widget.Toolbar>
 
