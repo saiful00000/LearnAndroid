@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ButtonCode"
+            android:label="Button Code" />
+        <activity
             android:name=".EditTextCode"
-            android:label="EditText Code"></activity>
+            android:label="EditText Code" />
         <activity
             android:name=".TextViewCode"
             android:label="TextVIew Code" />

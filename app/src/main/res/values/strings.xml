@@ -46,7 +46,7 @@
 
 
     <string name="textview_description">TextView is a user interface element that displays text to the user.\n\nIt used to show text to the user.</string>
-
     <string name="edittext_description">A user interface element for entering and modifying text.\n\nIt used to read Text from user.</string>
+    <string name="button_description">A Button is a user interface element the user can tap or click to perform an action.</string>
 
 </resources>

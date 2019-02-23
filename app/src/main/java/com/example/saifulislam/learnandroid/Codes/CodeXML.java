@@ -15,7 +15,6 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String buttonXML = "";
     public static String imageButtonXML = "";
     public static String switchXML = "";
     public static String checkBoxXML = "";
@@ -24,6 +23,37 @@ public class CodeXML {
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String buttonXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/button_one_id\"\n" +
+            "        android:layout_width=\"150dp\"\n" +
+            "        android:layout_height=\"60dp\"\n" +
+            "        android:text=\"Button 1\"\n" +
+            "        android:background=\"#8D0FA3\"\n" +
+            "        android:textColor=\"#ffffff\"\n" +
+            "\n" +
+            "        />\n" +
+            "    <Button\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:id=\"@+id/button_two_id\"\n" +
+            "        android:layout_width=\"150dp\"\n" +
+            "        android:layout_height=\"60dp\"\n" +
+            "        android:text=\"Button 2\"\n" +
+            "        android:background=\"#0375CE\"\n" +
+            "\n" +
+            "        />\n" +
+            "    \n" +
+            "</LinearLayout>";
 
     public static String editTextXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

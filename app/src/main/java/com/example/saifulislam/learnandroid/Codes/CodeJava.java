@@ -24,7 +24,43 @@ public class CodeJava {
     public static String switchJava = "";
     public static String radioButtonJava = "";
     public static String imageButtonJava = "";
-    public static String buttonJava = "";
+
+    public static String buttonJava = "package com.example.button;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private Button buttonOne, buttonTwo;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        buttonOne = findViewById(R.id.button_one_id);\n" +
+            "        buttonTwo = findViewById(R.id.button_two_id);\n" +
+            "\n" +
+            "        buttonOne.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                Toast.makeText(MainActivity.this, \"Button one is Clicked\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        buttonTwo.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                Toast.makeText(MainActivity.this, \"Button two is clicked\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
+
     public static String editTextJava = "package com.example.edittext;\n" +
             "import android.support.v7.app.AppCompatActivity;\n" +
             "import android.os.Bundle;\n" +
