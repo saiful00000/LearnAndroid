@@ -39,4 +39,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="java">Java</string>
+    <string name="xml">XML</string>
+    <string name="manifest">Manifest</string>
+    <string name="description">Description</string>
+
+
+    <string name="textview_description">TextView is a user interface element that displays text to the user.\n\nIt used to show text to the user.</string>
+
+    <string name="edittext_description">A user interface element for entering and modifying text.\n\nIt used to read Text from user.</string>
+
 </resources>

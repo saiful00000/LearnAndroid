@@ -6,4 +6,7 @@
     <color name="colorViolate">#FF5E0241</color>
     <color name="gray">#d3d3d3</color>
     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="fab_color">#0277BD</color>
 </resources>

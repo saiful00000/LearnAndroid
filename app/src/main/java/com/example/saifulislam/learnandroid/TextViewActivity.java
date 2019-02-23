@@ -25,21 +25,14 @@ public class TextViewActivity extends AppCompatActivity {
         setUpTheToolbar();
 
         fabe = findViewById(R.id.fab);
-
-
         fabe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TextViewActivity.this, TextViewCode.class);
                 startActivity(intent);
-                /*Toast.makeText(TextViewActivity.this, "Toast", Toast.LENGTH_SHORT).show();
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
             }
         });
     }
-
-
 
 
     //setup the toolbar

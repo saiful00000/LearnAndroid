@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 
 import com.example.saifulislam.learnandroid.Codes.CodeJava;
 import com.example.saifulislam.learnandroid.Codes.CodeManifest;
@@ -18,32 +19,32 @@ import com.example.saifulislam.learnandroid.fragments.Java;
 import com.example.saifulislam.learnandroid.fragments.Manifesto;
 import com.example.saifulislam.learnandroid.fragments.XML;
 
-public class TextViewCode extends AppCompatActivity {
+public class EditTextCode extends AppCompatActivity {
 
     private Toolbar toolbar;
     private BottomNavigationView bottomNavigationView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_view_code);
+        setContentView(R.layout.activity_edit_text_code);
 
-        //set up the toolbar
+        // set the toolbar
         setUpTheToolbar();
 
         // pass description, java,xml and manifest code to fragments
-        Description.header = "TextView";
-        Description.description = getString(R.string.textview_description);
-        Java.cdJava = CodeJava.textViewJava;
-        XML.cdXML = CodeXML.textViewXML;
-        Manifesto.cdMan = CodeManifest.textViewMan;
+        Description.header = "EditText";
+        Description.description = getString(R.string.edittext_description);
+        Java.cdJava = CodeJava.editTextJava;
+        XML.cdXML = CodeXML.editTextXML;
+        Manifesto.cdMan = CodeManifest.editTextMan;
 
-        //set defoult fragment
+        // set default fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Description()).commit();
 
         bottomNavigationView = findViewById(R.id.bottom_navigation_id);
         bottomNavigationView.setOnNavigationItemSelectedListener(navItemSelectListener);
+
     }
 
     // this method for perform bottom navigation view item clock listener :)
@@ -66,8 +67,8 @@ public class TextViewCode extends AppCompatActivity {
                             currentFragment = new Manifesto();
                             break;
                     }
-                    // update current_fragment state
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, currentFragment).commit();
+                    // update current fragment state
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,currentFragment).commit();
                     return true;
                 }
             };
@@ -86,5 +87,32 @@ public class TextViewCode extends AppCompatActivity {
             }
         });
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

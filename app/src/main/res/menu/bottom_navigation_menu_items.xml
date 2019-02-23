@@ -2,16 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/description_nav_item"
+        android:icon="@drawable/ic_description_black_24dp"
+        android:title="@string/description" />
+    <item
         android:id="@+id/java_nav_item"
         android:icon="@drawable/java"
-        android:title="Java" />
+        android:title="@string/java" />
     <item
         android:id="@+id/xml_nav_item"
         android:icon="@drawable/xml"
-        android:title="XML" />
+        android:title="@string/xml" />
     <item
         android:id="@+id/manifesto_nav_item"
-        android:title="Manifest"
-        android:icon="@drawable/manifesto"/>
+        android:icon="@drawable/manifesto"
+        android:title="@string/manifest" />
 
 </menu>
