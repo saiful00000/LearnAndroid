@@ -15,13 +15,43 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String switchXML = "";
     public static String checkBoxXML = "";
     public static String alertDialogXML = "";
     public static String scrollViewXML = "";
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String switchXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Switch\n" +
+            "        android:id=\"@+id/switch_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:text=\"Switch  \"\n" +
+            "        android:textOff=\"off\"\n" +
+            "        android:textOn=\"on\"\n" +
+            "        android:textSize=\"30dp\" />\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:id=\"@+id/textview_id\"\n" +
+            "        android:text=\"Switch is off.\"\n" +
+            "        android:textColor=\"#FF0000\"\n" +
+            "        android:textSize=\"20sp\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginTop=\"40dp\" />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String imageButtonXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

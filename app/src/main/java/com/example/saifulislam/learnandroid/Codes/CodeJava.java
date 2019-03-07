@@ -21,8 +21,43 @@ public class CodeJava {
     public static String scrollViewJava = "";
     public static String progressBarJava = "";
     public static String seekBarJava = "";
-    public static String switchJava = "";
     public static String radioButtonJava = "";
+
+    public static String switchJava = "package com.example.aswitch;\n" +
+            "import android.graphics.Color;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.widget.CompoundButton;\n" +
+            "import android.widget.Switch;\n" +
+            "import android.widget.TextView;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    Switch aSwitch;\n" +
+            "    TextView textView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        aSwitch = findViewById(R.id.switch_id);\n" +
+            "        textView = findViewById(R.id.textview_id);\n" +
+            "\n" +
+            "        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {\n" +
+            "            @Override\n" +
+            "            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {\n" +
+            "                if (isChecked){\n" +
+            "                    textView.setTextColor(Color.GREEN);\n" +
+            "                    textView.setText(\"Switch is on.\");\n" +
+            "                }else {\n" +
+            "                    textView.setTextColor(Color.RED);\n" +
+            "                    textView.setText(\"Switch is off\");\n" +
+            "                }\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String imageButtonJava = "package com.example.imagebutton;\n" +
             "\n" +

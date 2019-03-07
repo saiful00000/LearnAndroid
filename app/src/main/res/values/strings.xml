@@ -49,5 +49,24 @@
     <string name="edittext_description">A user interface element for entering and modifying text.\n\nIt used to read Text from user.</string>
     <string name="button_description">A Button is a user interface element the user can tap or click to perform an action.</string>
     <string name="image_button_description">Displays a button with an image (instead of text) that can be pressed or clicked by the user. By default, an ImageButton looks like a regular Button, with the standard button background that changes color during different button states.</string>
+    <string name="switch_description">A Switch is a two-state toggle switch widget that can select between two options. The user may drag the "thumb" back and forth to choose the selected option, or simply tap to toggle as if it were a checkbox. The text property controls the text displayed in the label for the switch, whereas the off and on text controls the text on the thumb.</string>
+    <string name="sample"></string>
+    <string name="sample1"></string>
+    <string name="sample3"></string>
+    <string name="sample4"></string>
+    <string name="sample5"></string>
+    <string name="sample6"></string>
+    <string name="sample7"></string>
+    <string name="sample8"></string>
+    <string name="sample9"></string>
+    <string name="sample10"></string>
+    <string name="sample11"></string>
+    <string name="sample12"></string>
+    <string name="sample14"></string>
+    <string name="sample13"></string>
+    <string name="sample15"></string>
+    <string name="sample17"></string>
+    <string name="sample16"></string>
+    <string name="sample27"></string>
 
 </resources>
