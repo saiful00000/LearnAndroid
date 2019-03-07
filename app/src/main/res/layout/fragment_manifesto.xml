@@ -4,16 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".fragments.Manifesto">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Activity"
+        android:text="AndroidManifest.xml"
         style="@style/Base.TextAppearance.AppCompat.Large"
         />
     <io.github.kbiakov.codeview.CodeView
+        android:layout_marginTop="10dp"
         android:id="@+id/textViewCodeViewManifesto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

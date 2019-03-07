@@ -15,7 +15,6 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String imageButtonXML = "";
     public static String switchXML = "";
     public static String checkBoxXML = "";
     public static String alertDialogXML = "";
@@ -23,6 +22,33 @@ public class CodeXML {
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String imageButtonXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <ImageButton\n" +
+            "        android:id=\"@+id/image_button_id\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:src=\"@drawable/gelary_image\"\n" +
+            "        />\n" +
+            "    \n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:id=\"@+id/textview_id\"\n" +
+            "        android:textSize=\"30sp\"\n" +
+            "        />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String buttonXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

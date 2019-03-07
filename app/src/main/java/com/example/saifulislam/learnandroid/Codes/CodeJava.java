@@ -23,7 +23,38 @@ public class CodeJava {
     public static String seekBarJava = "";
     public static String switchJava = "";
     public static String radioButtonJava = "";
-    public static String imageButtonJava = "";
+
+    public static String imageButtonJava = "package com.example.imagebutton;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.ImageButton;\n" +
+            "import android.widget.TextView;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private ImageButton imageButton;\n" +
+            "    private TextView textView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        imageButton = findViewById(R.id.image_button_id);\n" +
+            "        textView = findViewById(R.id.textview_id);\n" +
+            "\n" +
+            "        imageButton.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                textView.setText(\"ImageButton Clicked!\");\n" +
+            "                Toast.makeText(MainActivity.this, \"ImageButton Clicked!\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String buttonJava = "package com.example.button;\n" +
             "\n" +
