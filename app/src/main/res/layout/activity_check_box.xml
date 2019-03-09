@@ -10,27 +10,77 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
-        >
+        android:weightSum="5">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox Activity"
-            android:textSize="40dp"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_one_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox 1"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_two_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:text="Checkbox 2"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_three_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/fab_color"
+                android:text="CheckBox 3"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@color/fab_color"
+                android:text="Check"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:src="@drawable/codewhile"
+                app:backgroundTint="@color/fab_color" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

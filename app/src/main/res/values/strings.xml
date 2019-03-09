@@ -50,7 +50,7 @@
     <string name="button_description">A Button is a user interface element the user can tap or click to perform an action.</string>
     <string name="image_button_description">Displays a button with an image (instead of text) that can be pressed or clicked by the user. By default, an ImageButton looks like a regular Button, with the standard button background that changes color during different button states.</string>
     <string name="switch_description">A Switch is a two-state toggle switch widget that can select between two options. The user may drag the "thumb" back and forth to choose the selected option, or simply tap to toggle as if it were a checkbox. The text property controls the text displayed in the label for the switch, whereas the off and on text controls the text on the thumb.</string>
-    <string name="sample"></string>
+    <string name="check_box_description">A checkbox is a specific type of two-states button that can be either checked or unchecked.</string>
     <string name="sample1"></string>
     <string name="sample3"></string>
     <string name="sample4"></string>

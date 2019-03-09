@@ -18,32 +18,30 @@ import com.example.saifulislam.learnandroid.fragments.Java;
 import com.example.saifulislam.learnandroid.fragments.Manifesto;
 import com.example.saifulislam.learnandroid.fragments.XML;
 
-public class ImageButtonCode extends AppCompatActivity {
+public class CheckBoxCode extends AppCompatActivity {
 
     private Toolbar toolbar;
     private BottomNavigationView bottomNavigationView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_button_code);
+        setContentView(R.layout.activity_check_box_code);
 
         //setup the toolbar
         setUpTheToolbar();
 
-        Description.header = "ImageButton";
-        Description.description = getString(R.string.image_button_description);
-        Java.cdJava = CodeJava.imageButtonJava;
-        XML.cdXML = CodeXML.imageButtonXML;
-        Manifesto.cdMan = CodeManifest.imageButtonMan;
+        Description.header = "CheckBox";
+        Description.description = getString(R.string.check_box_description);
+        Java.cdJava = CodeJava.checkBoxJava;
+        XML.cdXML = CodeXML.checkBoxXML;
+        Manifesto.cdMan = CodeManifest.checkBoxMan;
 
         // set default fragment for fragment container
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Description()).commit();
 
         bottomNavigationView = findViewById(R.id.bottom_navigation_id);
         bottomNavigationView.setOnNavigationItemSelectedListener(navItemSelectListener);
-
     }
 
     // this method for perform bottom navigation view item clock listener :)
@@ -66,7 +64,7 @@ public class ImageButtonCode extends AppCompatActivity {
                             currentFragment = new Manifesto();
                             break;
                     }
-                    // update current fragment
+                    // uptate current fragment
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, currentFragment).commit();
                     return true;
                 }
@@ -86,6 +84,4 @@ public class ImageButtonCode extends AppCompatActivity {
             }
         });
     }
-
-
 }

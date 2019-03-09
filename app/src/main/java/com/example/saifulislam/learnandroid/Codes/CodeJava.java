@@ -16,12 +16,57 @@ public class CodeJava {
     public static String toastJava = "";
 
 
-    public static String checkBoxJava = "";
+
     public static String alertDialogJava = "";
     public static String scrollViewJava = "";
     public static String progressBarJava = "";
     public static String seekBarJava = "";
     public static String radioButtonJava = "";
+
+    public static String checkBoxJava = "package com.example.checkbox;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.CheckBox;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    CheckBox checkBox1, checkBox2, checkBox3;\n" +
+            "    Button button;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        checkBox1 = findViewById(R.id.checkbox_one_id);\n" +
+            "        checkBox2 = findViewById(R.id.checkbox_two_id);\n" +
+            "        checkBox3 = findViewById(R.id.checkbox_three_id);\n" +
+            "\n" +
+            "        button = findViewById(R.id.button_id);\n" +
+            "\n" +
+            "        button.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                String result = \"\";\n" +
+            "                if (checkBox1.isChecked()){\n" +
+            "                    result += \"CheckBox 1 \";\n" +
+            "                }\n" +
+            "                if (checkBox2.isChecked()){\n" +
+            "                    result += \"CheckBox 2 \";\n" +
+            "                }\n" +
+            "                if (checkBox3.isChecked()){\n" +
+            "                    result += \"CheckBox 3 \";\n" +
+            "                }\n" +
+            "                Toast.makeText(MainActivity.this, result + \"is CHecked.\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "    }\n" +
+            "}\n";
 
     public static String switchJava = "package com.example.aswitch;\n" +
             "import android.graphics.Color;\n" +

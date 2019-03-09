@@ -15,12 +15,55 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String checkBoxXML = "";
     public static String alertDialogXML = "";
     public static String scrollViewXML = "";
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String checkBoxXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <CheckBox\n" +
+            "        android:id=\"@+id/checkbox_one_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:buttonTint=\"@color/colorPrimary\"\n" +
+            "        android:text=\" CheckBox 01\"\n" +
+            "        android:textSize=\"30sp\" />\n" +
+            "\n" +
+            "    <CheckBox\n" +
+            "        android:id=\"@+id/checkbox_two_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:buttonTint=\"@color/colorAccent\"\n" +
+            "        android:text=\" CheckBox 02\"\n" +
+            "        android:textSize=\"30sp\" />\n" +
+            "\n" +
+            "    <CheckBox\n" +
+            "        android:id=\"@+id/checkbox_three_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:buttonTint=\"@color/colorPrimaryDark\"\n" +
+            "        android:text=\" CheckBox 03\"\n" +
+            "        android:textSize=\"30sp\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/button_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:textColor=\"@color/colorAccent\"\n" +
+            "        android:text=\"Check\" />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String switchXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
