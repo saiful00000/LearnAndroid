@@ -16,12 +16,61 @@ public class CodeJava {
     public static String toastJava = "";
 
 
-
-    public static String alertDialogJava = "";
     public static String scrollViewJava = "";
     public static String progressBarJava = "";
     public static String seekBarJava = "";
     public static String radioButtonJava = "";
+
+    public static String alertDialogJava = "package com.example.alerdialog;\n" +
+            "\n" +
+            "import android.content.DialogInterface;\n" +
+            "import android.support.v7.app.AlertDialog;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private Button button;\n" +
+            "    private AlertDialog.Builder alertDialogBuilder;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        \n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        button = findViewById(R.id.button_id);\n" +
+            "        button.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);\n" +
+            "                alertDialogBuilder.setIcon(R.drawable.ic_warning_black_24dp);\n" +
+            "                alertDialogBuilder.setTitle(\" Alert !\");\n" +
+            "                alertDialogBuilder.setMessage(\"Do you want to exit\");\n" +
+            "                alertDialogBuilder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {\n" +
+            "                    @Override\n" +
+            "                    public void onClick(DialogInterface dialog, int which) {\n" +
+            "                        finish();\n" +
+            "                        Toast.makeText(MainActivity.this, \"You Exit from Application.\", Toast.LENGTH_SHORT).show();\n" +
+            "                    }\n" +
+            "                });\n" +
+            "                alertDialogBuilder.setNegativeButton(\"No\", new DialogInterface.OnClickListener() {\n" +
+            "                    @Override\n" +
+            "                    public void onClick(DialogInterface dialog, int which) {\n" +
+            "                        Toast.makeText(MainActivity.this, \"You pressed No\", Toast.LENGTH_SHORT).show();\n" +
+            "                    }\n" +
+            "                });\n" +
+            "                AlertDialog alertDialog = alertDialogBuilder.create();\n" +
+            "                alertDialog.show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "    }\n" +
+            "\n" +
+            "}\n";
 
     public static String checkBoxJava = "package com.example.checkbox;\n" +
             "\n" +

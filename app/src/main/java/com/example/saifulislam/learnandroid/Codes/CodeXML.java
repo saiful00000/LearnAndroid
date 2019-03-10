@@ -15,11 +15,34 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String alertDialogXML = "";
     public static String scrollViewXML = "";
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String alertDialogXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center|bottom\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/button_id\"\n" +
+            "        android:layout_marginBottom=\"50dp\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:background=\"@color/colorAccent\"\n" +
+            "        android:textColor=\"#ffffff\"\n" +
+            "        android:padding=\"5dp\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:text=\"Show AlertDialog\"\n" +
+            "        />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String checkBoxXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
