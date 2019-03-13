@@ -16,9 +16,39 @@ public class CodeXML {
 
 
 
-    public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String progressBarXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginLeft=\"10dp\"\n" +
+            "        android:layout_marginTop=\"10dp\"\n" +
+            "        android:text=\"ProgressBar\"\n" +
+            "        android:textSize=\"30sp\"\n" +
+            "        app:layout_constraintBottom_toBottomOf=\"parent\"\n" +
+            "        app:layout_constraintLeft_toLeftOf=\"parent\"\n" +
+            "        app:layout_constraintRight_toRightOf=\"parent\"\n" +
+            "        app:layout_constraintTop_toTopOf=\"parent\" />\n" +
+            "\n" +
+            "    <ProgressBar\n" +
+            "        android:id=\"@+id/progrebar_id\"\n" +
+            "        style=\"@style/Base.Widget.AppCompat.ProgressBar.Horizontal\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"20dp\"\n" +
+            "        android:layout_margin=\"20dp\" />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String scrollViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

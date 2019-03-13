@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ProgressBarCode"
+            android:label="ProgressBar Code"/>
+        <activity
             android:name=".ScrollViewCode"
-            android:label="ScrollView Code"/>
+            android:label="ScrollView Code" />
         <activity
             android:name=".AlertDialogCode"
             android:label="AlertDialog Code" />

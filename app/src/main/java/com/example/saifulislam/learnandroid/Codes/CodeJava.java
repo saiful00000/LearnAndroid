@@ -17,9 +17,47 @@ public class CodeJava {
 
 
 
-    public static String progressBarJava = "";
     public static String seekBarJava = "";
     public static String radioButtonJava = "";
+
+    public static String progressBarJava = "package com.example.progressbar;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.ProgressBar;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    ProgressBar progressBar;\n" +
+            "    \n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        progressBar = findViewById(R.id.progrebar_id);\n" +
+            "\n" +
+            "        Thread thread = new Thread(new Runnable() {\n" +
+            "            @Override\n" +
+            "            public void run() {\n" +
+            "                doWork();\n" +
+            "            }\n" +
+            "        });\n" +
+            "        thread.start();\n" +
+            "    }\n" +
+            "    public void doWork() {\n" +
+            "        for (int progress = 1; progress <= 100; progress+=1) {\n" +
+            "            try {\n" +
+            "                Thread.sleep(100);\n" +
+            "                progressBar.setProgress(progress);\n" +
+            "            } catch (InterruptedException e) {\n" +
+            "                e.printStackTrace();\n" +
+            "            }\n" +
+            "        }\n" +
+            "    }\n" +
+            "}\n";
 
     public static String scrollViewJava = "package com.example.scrollview;\n" +
             "\n" +
