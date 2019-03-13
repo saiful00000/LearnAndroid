@@ -51,11 +51,16 @@
     <string name="textview_description">TextView is a user interface element that displays text to the user.\n\nIt used to show text to the user.</string>
     <string name="edittext_description">A user interface element for entering and modifying text.\n\nIt used to read Text from user.</string>
     <string name="button_description">A Button is a user interface element the user can tap or click to perform an action.</string>
-    <string name="image_button_description">Displays a button with an image (instead of text) that can be pressed or clicked by the user. By default, an ImageButton looks like a regular Button, with the standard button background that changes color during different button states.</string>
-    <string name="switch_description">A Switch is a two-state toggle switch widget that can select between two options. The user may drag the "thumb" back and forth to choose the selected option, or simply tap to toggle as if it were a checkbox. The text property controls the text displayed in the label for the switch, whereas the off and on text controls the text on the thumb.</string>
+    <string name="image_button_description">Displays a button with an image (instead of text) that can be pressed or clicked by the user. By default,
+        an ImageButton looks like a regular Button, with the standard button background that changes color during different button states.</string>
+    <string name="switch_description">A Switch is a two-state toggle switch widget that can select between two options. The user may drag the "thumb"
+        back and forth to choose the selected option, or simply tap to toggle as if it were a checkbox. The text property controls the text displayed
+        in the label for the switch, whereas the off and on text controls the text on the thumb.</string>
     <string name="check_box_description">A checkbox is a specific type of two-states button that can be either checked or unchecked.</string>
     <string name="alert_dialog_description">A dialog that can show a title, up to three buttons, a list of selectable items, or a custom layout.</string>
-    <string name="sample3"></string>
+    <string name="scroll_view_description">A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one
+        direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout,
+        and place additional views within that LinearLayout.Scroll view supports vertical scrolling only. For horizontal scrolling, use HorizontalScrollView instead.</string>
     <string name="sample4"></string>
     <string name="sample5"></string>
     <string name="sample6"></string>

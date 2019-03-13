@@ -16,10 +16,24 @@ public class CodeJava {
     public static String toastJava = "";
 
 
-    public static String scrollViewJava = "";
+
     public static String progressBarJava = "";
     public static String seekBarJava = "";
     public static String radioButtonJava = "";
+
+    public static String scrollViewJava = "package com.example.scrollview;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "    }\n" +
+            "}\n";
 
     public static String alertDialogJava = "package com.example.alerdialog;\n" +
             "\n" +

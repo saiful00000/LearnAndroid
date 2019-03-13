@@ -15,10 +15,163 @@ public class CodeXML {
     public static String toastXML = "";
 
 
-    public static String scrollViewXML = "";
+
     public static String progressBarXML = "";
     public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String scrollViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:padding=\"20dp\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"ScrollView\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:textSize=\"30sp\"\n" +
+            "        />\n" +
+            "\n" +
+            "    <ScrollView\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"match_parent\">\n" +
+            "\n" +
+            "        <LinearLayout\n" +
+            "            android:layout_width=\"match_parent\"\n" +
+            "            android:orientation=\"vertical\"\n" +
+            "            android:layout_height=\"wrap_content\">\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:text=\"Button 0\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#000000\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 1\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#53C00A\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 2\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#5E1361\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 3\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#03A9F4\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 4\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#FF9800\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 5\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#4CAF50\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 6\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#F44336\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 7\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#E91E63\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 8\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#9C27B0\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 9\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#673AB7\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 10\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#2196F3\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 11\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#CDDC39\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 12\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#5E35B1\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 13\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#00E5FF\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 14\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#FF3D00\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 15\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#FF1744\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "            <Button\n" +
+            "                android:layout_marginTop=\"4dp\"\n" +
+            "                android:text=\"Button 16\"\n" +
+            "                android:textColor=\"#ffffff\"\n" +
+            "                android:background=\"#00E5FF\"\n" +
+            "                android:layout_width=\"match_parent\"\n" +
+            "                android:layout_height=\"wrap_content\" />\n" +
+            "\n" +
+            "\n" +
+            "        </LinearLayout>\n" +
+            "\n" +
+            "    </ScrollView>\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String alertDialogXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
