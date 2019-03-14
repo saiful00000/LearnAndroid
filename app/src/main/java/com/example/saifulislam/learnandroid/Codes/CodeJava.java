@@ -17,7 +17,42 @@ public class CodeJava {
 
 
 
-    public static String radioButtonJava = "";
+    public static String radioButtonJava = "package com.example.radiobutton;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.RadioButton;\n" +
+            "import android.widget.RadioGroup;\n" +
+            "import android.widget.TextView;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    RadioGroup radioGroup;\n" +
+            "    RadioButton radioButton;\n" +
+            "    Button button;\n" +
+            "    TextView textView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        button = findViewById(R.id.button_id);\n" +
+            "        radioGroup = findViewById(R.id.radiogroup_id);\n" +
+            "        textView = findViewById(R.id.textview_id);\n" +
+            "\n" +
+            "        button.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                int radioButtonId = radioGroup.getCheckedRadioButtonId();\n" +
+            "                radioButton = findViewById(radioButtonId);\n" +
+            "                textView.setText(\"You Chose \" + radioButton.getText());\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String seekBarJava = "package com.example.seekbar;\n" +
             "\n" +

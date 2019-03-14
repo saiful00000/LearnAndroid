@@ -16,7 +16,78 @@ public class CodeXML {
 
 
 
-    public static String radioButtonXML = "";
+    public static String radioButtonXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <RadioGroup\n" +
+            "        android:id=\"@+id/radiogroup_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\">\n" +
+            "\n" +
+            "        <RadioButton\n" +
+            "            android:id=\"@+id/radio_button_one_id\"\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:text=\"Samsung\"\n" +
+            "            android:textColor=\"#000000\"\n" +
+            "            android:textSize=\"20sp\" />\n" +
+            "\n" +
+            "        <RadioButton\n" +
+            "            android:id=\"@+id/radio_button_two_id\"\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:text=\"Google\"\n" +
+            "            android:textColor=\"#000000\"\n" +
+            "            android:textSize=\"20sp\" />\n" +
+            "\n" +
+            "        <RadioButton\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:id=\"@+id/radio_button_three_id\"\n" +
+            "            android:text=\"Apple\"\n" +
+            "            android:textColor=\"#000000\"\n" +
+            "            android:textSize=\"20sp\"\n" +
+            "            />\n" +
+            "\n" +
+            "        <RadioButton\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:id=\"@+id/radio_button_four_id\"\n" +
+            "            android:text=\"Microsoft\"\n" +
+            "            android:textColor=\"#000000\"\n" +
+            "            android:textSize=\"20sp\"\n" +
+            "            />\n" +
+            "\n" +
+            "    </RadioGroup>\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/button_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Show Selection\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:padding=\"4dp\"\n" +
+            "        android:textColor=\"#ffffff\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:background=\"#3D5AFE\"\n" +
+            "        />\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:id=\"@+id/textview_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:textSize=\"30sp\"/>\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String seekBarXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

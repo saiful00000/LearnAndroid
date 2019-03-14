@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".RadioButtonCode"
+            android:label="RadioButton Code" />
+        <activity
             android:name=".SeekBarCode"
             android:label="SeekBar Code" />
         <activity
