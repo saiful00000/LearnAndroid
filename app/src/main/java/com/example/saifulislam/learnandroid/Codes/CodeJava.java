@@ -17,8 +17,45 @@ public class CodeJava {
 
 
 
-    public static String seekBarJava = "";
     public static String radioButtonJava = "";
+
+    public static String seekBarJava = "package com.example.seekbar;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.widget.SeekBar;\n" +
+            "import android.widget.TextView;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    SeekBar seekBar;\n" +
+            "    TextView textView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        seekBar = findViewById(R.id.seekbar_id);\n" +
+            "        textView = findViewById(R.id.textview_id);\n" +
+            "\n" +
+            "        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {\n" +
+            "            @Override\n" +
+            "            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {\n" +
+            "                textView.setText(\"Progress\" + progress + \" / 20\");\n" +
+            "            }\n" +
+            "            @Override\n" +
+            "            public void onStartTrackingTouch(SeekBar seekBar) {\n" +
+            "                Toast.makeText(MainActivity.this, \"Seekbar Touched.\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "            @Override\n" +
+            "            public void onStopTrackingTouch(SeekBar seekBar) {\n" +
+            "                Toast.makeText(MainActivity.this, \"Seekbar Touch Finished.\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String progressBarJava = "package com.example.progressbar;\n" +
             "\n" +

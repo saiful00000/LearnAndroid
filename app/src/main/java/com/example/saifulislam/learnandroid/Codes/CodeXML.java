@@ -16,8 +16,36 @@ public class CodeXML {
 
 
 
-    public static String seekBarXML = "";
     public static String radioButtonXML = "";
+
+    public static String seekBarXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:padding=\"20dp\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <SeekBar\n" +
+            "        android:id=\"@+id/seekbar_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"30dp\"\n" +
+            "        android:thumbTint=\"@color/colorPrimaryDark\"\n" +
+            "        />\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:id=\"@+id/textview_id\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:textSize=\"20sp\"\n" +
+            "        android:text=\"Progress : 0 / 20\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String progressBarXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

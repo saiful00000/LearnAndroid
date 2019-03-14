@@ -63,7 +63,8 @@
         and place additional views within that LinearLayout.Scroll view supports vertical scrolling only. For horizontal scrolling, use HorizontalScrollView instead.</string>
     <string name="prgressbar_description">A user interface element that indicates the progress of an operation. Progress bar supports two modes to represent progress:
         determinate, and indeterminate.Show the progress bar in your apps user interface or in a notification instead of within a dialog.</string>
-    <string name="sample5"></string>
+    <string name="seekbar_description">A SeekBar is an extension of ProgressBar that adds a draggable thumb. The user can touch the thumb and drag
+        left or right to set the current progress level or use the arrow keys. Placing focusable widgets to the left or right of a SeekBar is discouraged.</string>
     <string name="sample6"></string>
     <string name="sample7"></string>
     <string name="sample8"></string>

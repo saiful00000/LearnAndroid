@@ -6,32 +6,57 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:weightSum="5"
     tools:context=".TextViewActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="4"
         android:gravity="center"
-        >
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seekbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="20"
+            android:thumbTint="@color/fab_color" />
 
         <TextView
+            android:id="@+id/text_view_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SeekBar Activity"
-            android:textSize="40dp"
-            />
+            android:text="Progress : 0 / 20"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/codewhile"
+            app:backgroundTint="@color/fab_color" />
     </LinearLayout>
 
 
