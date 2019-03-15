@@ -1,14 +1,20 @@
 package com.example.saifulislam.learnandroid;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class ToastActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private Button toastButton, customToastButton;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +23,37 @@ public class ToastActivity extends AppCompatActivity {
 
         //setup the toolbar
         setUpTheToolbar();
+
+        toastButton = findViewById(R.id.toast_button_id);
+        customToastButton = findViewById(R.id.custom_toast_button_id);
+        floatingActionButton = findViewById(R.id.fab_id);
+
+        toastButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ToastActivity.this, "This is a Toast.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        customToastButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View toastView = getLayoutInflater().inflate(R.layout.custom_toast_background, null );
+                Toast toast = new Toast(getApplicationContext());
+                toast.setView(toastView);
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ToastActivity.this, ToastCode.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

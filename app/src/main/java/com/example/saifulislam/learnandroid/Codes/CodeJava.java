@@ -13,8 +13,48 @@ public class CodeJava {
     public static String fragmentJava = "";
     public static String mapJava = "";
     public static String sqliteJava = "";
-    public static String toastJava = "";
 
+
+    public static String toastJava = "package com.example.toast;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    Button toastButon, customToastButton;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        toastButon = findViewById(R.id.toast_button_id);\n" +
+            "        customToastButton = findViewById(R.id.custom_toast_button_id);\n" +
+            "\n" +
+            "        toastButon.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                Toast.makeText(MainActivity.this, \"Toast\", Toast.LENGTH_SHORT).show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        customToastButton.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                View toastView = getLayoutInflater().inflate(R.layout.custom_toast_background, null);\n" +
+            "                Toast toast = new Toast(getApplicationContext());\n" +
+            "                toast.setView(toastView);\n" +
+            "                toast.setDuration(Toast.LENGTH_SHORT);\n" +
+            "                toast.show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "    }\n" +
+            "}\n";
 
 
     public static String radioButtonJava = "package com.example.radiobutton;\n" +

@@ -12,7 +12,40 @@ public class CodeXML {
     public static String fragmentXML = "";
     public static String mapXML = "";
     public static String sqliteXML = "";
-    public static String toastXML = "";
+
+
+    public static String toastXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/toast_button_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:background=\"#3D5AFE\"\n" +
+            "        android:padding=\"5dp\"\n" +
+            "        android:text=\"Toast\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:textSize=\"20sp\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/custom_toast_button_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:background=\"#1DE9B6\"\n" +
+            "        android:padding=\"5dp\"\n" +
+            "        android:text=\"Custom Toast\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:textSize=\"20sp\" />\n" +
+            "\n" +
+            "</LinearLayout>";
 
 
 
