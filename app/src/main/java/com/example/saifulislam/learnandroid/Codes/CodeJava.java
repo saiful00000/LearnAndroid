@@ -7,13 +7,67 @@ public class CodeJava {
     public static String menuJava = "";
     public static String dateTimeJava = "";
     public static String animationJava = "";
-    public static String auodioJava = "";
     public static String videoJava = "";
     public static String cameraJava = "";
     public static String fragmentJava = "";
     public static String mapJava = "";
     public static String sqliteJava = "";
 
+    public static String auodioJava = "package com.example.audio;\n" +
+            "\n" +
+            "import android.media.MediaPlayer;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity{\n" +
+            "\n" +
+            "    private Button playButton, pauseButton, stopButton;\n" +
+            "    private MediaPlayer mediaPlayer;\n" +
+            "    private int pauseCurrentPosition;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        playButton = findViewById(R.id.play_button_id);\n" +
+            "        pauseButton = findViewById(R.id.pause_button_id);\n" +
+            "        stopButton = findViewById(R.id.stop_button_id);\n" +
+            "\n" +
+            "        playButton.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                if (mediaPlayer == null) {\n" +
+            "                    mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.onemorelight);\n" +
+            "                    mediaPlayer.start();\n" +
+            "                } else if (!mediaPlayer.isPlaying()) {\n" +
+            "                    mediaPlayer.seekTo(pauseCurrentPosition);\n" +
+            "                    mediaPlayer.start();\n" +
+            "                }\n" +
+            "            }\n" +
+            "        });\n" +
+            "        pauseButton.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                if (mediaPlayer != null) {\n" +
+            "                    mediaPlayer.pause();\n" +
+            "                    pauseCurrentPosition = mediaPlayer.getCurrentPosition();\n" +
+            "                }\n" +
+            "            }\n" +
+            "        });\n" +
+            "        stopButton.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                if (mediaPlayer != null) {\n" +
+            "                    mediaPlayer.stop();\n" +
+            "                    mediaPlayer = null;\n" +
+            "                }\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String toastJava = "package com.example.toast;\n" +
             "\n" +

@@ -6,13 +6,47 @@ public class CodeXML {
     public static String menuXML = "";
     public static String dateTimeXML = "";
     public static String animationXML = "";
-    public static String auodioXML = "";
     public static String videoXML = "";
     public static String cameraXML = "";
     public static String fragmentXML = "";
     public static String mapXML = "";
     public static String sqliteXML = "";
 
+    public static String auodioXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:background=\"@drawable/back\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <LinearLayout\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:gravity=\"center\">\n" +
+            "        \n" +
+            "        <Button\n" +
+            "            android:id=\"@+id/pause_button_id\"\n" +
+            "            android:layout_width=\"80dp\"\n" +
+            "            android:layout_height=\"80dp\"\n" +
+            "            android:background=\"@drawable/pause\" />\n" +
+            "\n" +
+            "        <Button\n" +
+            "            android:id=\"@+id/play_button_id\"\n" +
+            "            android:layout_width=\"130dp\"\n" +
+            "            android:layout_height=\"130dp\"\n" +
+            "            android:background=\"@drawable/ic_play_circle_outline_black_24dp\" />\n" +
+            "\n" +
+            "        <Button\n" +
+            "            android:id=\"@+id/stop_button_id\"\n" +
+            "            android:layout_width=\"80dp\"\n" +
+            "            android:layout_height=\"80dp\"\n" +
+            "            android:background=\"@drawable/stop\" />\n" +
+            "\n" +
+            "    </LinearLayout>\n" +
+            "</LinearLayout>";
 
     public static String toastXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
