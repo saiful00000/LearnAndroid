@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CommonWidgetActivity">
+    tools:context=".DateTimePicker">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -15,33 +15,25 @@
         android:elevation="4dp"
         android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
+    <TimePicker
+        android:id="@+id/time_picker_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TimePicker>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="bottom"
         android:orientation="vertical">
 
-        <Button
-            android:padding="3dp"
-            android:layout_gravity="center"
-            android:layout_width="150dp"
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_id"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="Android Clocks"
-            android:background="@color/button_two"
-            android:id="@+id/clock_btn_id"
-            />
-        <Button
-            android:id="@+id/datetime_picker_btn_id"
-            android:padding="3dp"
-            android:layout_marginTop="15dp"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="DateTime Picker"
-            android:textColor="@color/black"
-            android:background="@color/colorAccent"
-            />
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/codewhile"
+            app:backgroundTint="@color/fab_color" />
     </LinearLayout>
 
 </LinearLayout>

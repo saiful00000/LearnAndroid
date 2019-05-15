@@ -66,13 +66,16 @@
     <string name="seekbar_description">A SeekBar is an extension of ProgressBar that adds a draggable thumb. The user can touch the thumb and drag
         left or right to set the current progress level or use the arrow keys. Placing focusable widgets to the left or right of a SeekBar is discouraged.</string>
     <string name="radiobutton_description">Radio buttons allow the user to select one option from a set. You should use radio buttons for optional sets that are
-        mutually exclusive if you think that the user needs to see all available options side-by-side. If its not necessary to show all options side-by-side, use a spinner instead.</string>
+        mutually exclusive if you think that the user needs to see all available options side-by-side. If its not necessary to show all options side-by-side,
+        use a spinner instead.</string>
     <string name="toast_description">A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity
         remains visible and interactive. Toasts automatically disappear after a timeout.</string>
-    <string name="sample8"></string>
-    <string name="sample9"></string>
-    <string name="sample10"></string>
-    <string name="sample11"></string>
+    <string name="SQLite_description">SQLite is a opensource SQL database that stores data to a text file on a device. Android comes in with built in SQLite database implementation.SQLite supports all the relational database features. In order to access this database, you dont need to establish any kind of connections for it like JDBC,ODBC e.t.c</string>
+    <string name="timePicker_description">A widget for selecting the time of day, in either 24-hour or AM/PM mode.</string>
+    <string name="clock_description">A clock providing access to the current instant, date and time using a time-zone.</string>
+    <string name="animation_description">Animations can add visual cues that notify users about whats going on in your app. They are especially
+        useful when the UI changes state, such as when new content loads or new actions become available. Animations also add a polished look to
+        your app, which gives it a higher quality look and feel.Android includes different animation APIs depending on what type of animation you want</string>
     <string name="sample12"></string>
     <string name="sample14"></string>
     <string name="sample13"></string>

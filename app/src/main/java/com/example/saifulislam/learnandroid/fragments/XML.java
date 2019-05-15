@@ -25,7 +25,10 @@ public class XML extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_xml, container, false);
         CodeView codeView = view.findViewById(R.id.textViewCodeViewxml);
-        codeView.setOptions(Options.Default.get(context = container.getContext()).withLanguage("xml").withCode(cdXML).withTheme(ColorTheme.DEFAULT));
+        codeView.setOptions(Options.Default.get(context = container.getContext())
+                .withLanguage("xml")
+                .withCode(cdXML)
+                .withTheme(ColorTheme.DEFAULT));
         return view;
     }
 }

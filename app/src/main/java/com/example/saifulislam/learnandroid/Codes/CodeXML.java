@@ -4,13 +4,263 @@ public class CodeXML {
     public static String intentXML = "";
     public static String containerXML = "";
     public static String menuXML = "";
-    public static String dateTimeXML = "";
-    public static String animationXML = "";
     public static String videoXML = "";
     public static String cameraXML = "";
     public static String fragmentXML = "";
     public static String mapXML = "";
-    public static String sqliteXML = "";
+
+    public static String animationXML = "<LinearLayout\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_weight=\"3\"\n" +
+            "        android:layout_height=\"0dp\">\n" +
+            "\n" +
+            "        <ImageView\n" +
+            "            android:id=\"@+id/imageView\"\n" +
+            "            android:layout_width=\"match_parent\"\n" +
+            "            android:layout_height=\"match_parent\"\n" +
+            "            android:src=\"@drawable/ic_launcher_background\" />\n" +
+            "\n" +
+            "    </LinearLayout>\n" +
+            "\n" +
+            "    <LinearLayout\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_marginTop=\"10dp\"\n" +
+            "        android:layout_height=\"0dp\"\n" +
+            "        android:layout_weight=\"2\"\n" +
+            "        android:weightSum=\"3\"\n" +
+            "        >\n" +
+            "\n" +
+            "        <LinearLayout\n" +
+            "            android:layout_width=\"0dp\"\n" +
+            "            android:layout_weight=\"1\"\n" +
+            "            android:orientation=\"vertical\"\n" +
+            "            android:gravity=\"center_vertical\"\n" +
+            "            android:layout_height=\"wrap_content\">\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:onClick=\"clockwise\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:text=\"zoom\" />\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button2\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:onClick=\"zoom\"\n" +
+            "                android:text=\"clockwise\" />\n" +
+            "\n" +
+            "        </LinearLayout>\n" +
+            "\n" +
+            "        <LinearLayout\n" +
+            "            android:layout_width=\"0dp\"\n" +
+            "            android:layout_weight=\"1\"\n" +
+            "            android:orientation=\"vertical\"\n" +
+            "            android:gravity=\"center_vertical\"\n" +
+            "            android:layout_height=\"wrap_content\">\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button3\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:onClick=\"fade\"\n" +
+            "                android:text=\"fade\" />\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button4\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:onClick=\"blink\"\n" +
+            "                android:text=\"blink\" />\n" +
+            "\n" +
+            "        </LinearLayout>\n" +
+            "\n" +
+            "        <LinearLayout\n" +
+            "            android:layout_width=\"0dp\"\n" +
+            "            android:layout_weight=\"1\"\n" +
+            "            android:gravity=\"center_vertical\"\n" +
+            "            android:orientation=\"vertical\"\n" +
+            "            android:layout_height=\"wrap_content\">\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button5\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:onClick=\"move\"\n" +
+            "                android:text=\"move\" />\n" +
+            "\n" +
+            "            <Button\n" +
+            "                android:id=\"@+id/button6\"\n" +
+            "                android:layout_gravity=\"center\"\n" +
+            "                android:layout_width=\"wrap_content\"\n" +
+            "                android:layout_height=\"wrap_content\"\n" +
+            "                android:onClick=\"slide\"\n" +
+            "                android:text=\"slide\" />\n" +
+            "\n" +
+            "        </LinearLayout>\n" +
+            "\n" +
+            "    </LinearLayout>";
+
+    public static String dateTimePickerXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "\n" +
+            "    tools:context=\".DateTimePicker\">\n" +
+            "\n" +
+            "    <TimePicker\n" +
+            "        android:id=\"@+id/time_picker_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        >\n" +
+            "    </TimePicker>\n" +
+            "\n" +
+            "</LinearLayout>";
+
+    public static String clockXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".Clock\">\n" +
+            "\n" +
+            "    <LinearLayout\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:orientation=\"vertical\"\n" +
+            "        android:gravity=\"center\"\n" +
+            "        android:padding=\"10dp\"\n" +
+            "        >\n" +
+            "\n" +
+            "        <TextView\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:text=\"Analog Clock\"\n" +
+            "            android:textSize=\"20sp\"\n" +
+            "            android:textColor=\"@color/black\"\n" +
+            "            />\n" +
+            "\n" +
+            "        <AnalogClock\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:layout_gravity=\"center\"\n" +
+            "\n" +
+            "            />\n" +
+            "\n" +
+            "        <TextView\n" +
+            "            android:layout_marginTop=\"40dp\"\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            android:text=\"Digital Clock\"\n" +
+            "            android:textSize=\"20sp\"\n" +
+            "            android:textColor=\"@color/black\"\n" +
+            "            />\n" +
+            "\n" +
+            "        <TextClock\n" +
+            "            android:background=\"@color/fab_color\"\n" +
+            "            android:layout_marginTop=\"10dp\"\n" +
+            "            android:layout_width=\"wrap_content\"\n" +
+            "            android:layout_height=\"wrap_content\"\n" +
+            "            tools:targetApi=\"jelly_bean_mr1\"\n" +
+            "            android:format12Hour=\"hh:mm:ss a\"\n" +
+            "            android:textSize=\"25sp\"\n" +
+            "            android:layout_gravity=\"center\"\n" +
+            "            android:textColor=\"@color/white\"\n" +
+            "            android:padding=\"5dp\"\n" +
+            "            />\n" +
+            "\n" +
+            "    </LinearLayout>\n" +
+            "\n" +
+            "</LinearLayout>";
+
+    public static String sqliteXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:padding=\"20dp\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:id=\"@+id/showdata_tv_id\"\n" +
+            "        android:layout_marginTop=\"50dp\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        />\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginTop=\"50dp\"\n" +
+            "        android:text=\"Your name\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:textSize=\"18sp\" />\n" +
+            "\n" +
+            "    <EditText\n" +
+            "        android:id=\"@+id/name_et_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:hint=\"Name...\"\n" +
+            "        android:textColor=\"#000000\" />\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Your ID\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:textSize=\"18sp\" />\n" +
+            "\n" +
+            "    <EditText\n" +
+            "        android:id=\"@+id/id_et_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:hint=\"ID...\"\n" +
+            "        android:textColor=\"#000000\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/insert_btn_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:text=\"Insert your info to Db\"\n" +
+            "        android:textAllCaps=\"false\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/fetch_btn_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:layout_marginTop=\"10dp\"\n" +
+            "        android:text=\"Fetch your data from db\"\n" +
+            "        android:textAllCaps=\"false\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Delete your all info\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:layout_marginTop=\"10dp\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:id=\"@+id/dlt_all_rows_btn_id\"\n" +
+            "        />\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String auodioXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
@@ -600,4 +850,106 @@ public class CodeXML {
             "\n" +
             "\n" +
             "</LinearLayout>";
+
+    public static String myAnimationXMl = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set xmlns:android=\"http://schemas.android.com/apk/res/android\">\n" +
+            "\n" +
+            "   <scale xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "      android:fromXScale=\"0.5\"\n" +
+            "      android:toXScale=\"3.0\"\n" +
+            "      android:fromYScale=\"0.5\"\n" +
+            "      android:toYScale=\"3.0\"\n" +
+            "      android:duration=\"5000\"\n" +
+            "      android:pivotX=\"50%\"\n" +
+            "      android:pivotY=\"50%\" >\n" +
+            "   </scale>\n" +
+            "   \n" +
+            "   <scale xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "      android:startOffset=\"5000\"\n" +
+            "      android:fromXScale=\"3.0\"\n" +
+            "      android:toXScale=\"0.5\"\n" +
+            "      android:fromYScale=\"3.0\"\n" +
+            "      android:toYScale=\"0.5\"\n" +
+            "      android:duration=\"5000\"\n" +
+            "      android:pivotX=\"50%\"\n" +
+            "      android:pivotY=\"50%\" >\n" +
+            "   </scale>\n" +
+            "   \n" +
+            "</set>";
+
+    public static String clockwiseXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set xmlns:android=\"http://schemas.android.com/apk/res/android\">\n" +
+            "\n" +
+            "   <rotate xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "      android:fromDegrees=\"0\"\n" +
+            "      android:toDegrees=\"360\"\n" +
+            "      android:pivotX=\"50%\"\n" +
+            "      android:pivotY=\"50%\"\n" +
+            "      android:duration=\"5000\" >\n" +
+            "   </rotate>\n" +
+            "   \n" +
+            "   <rotate xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "      android:startOffset=\"5000\"\n" +
+            "      android:fromDegrees=\"360\"\n" +
+            "      android:toDegrees=\"0\"\n" +
+            "      android:pivotX=\"50%\"\n" +
+            "      android:pivotY=\"50%\"\n" +
+            "      android:duration=\"5000\" >\n" +
+            "   </rotate>\n" +
+            "   \n" +
+            "</set>";
+
+    public static String fadeXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "   android:interpolator=\"@android:anim/accelerate_interpolator\" >\n" +
+            "   \n" +
+            "   <alpha\n" +
+            "      android:fromAlpha=\"0\"\n" +
+            "      android:toAlpha=\"1\" \n" +
+            "      android:duration=\"2000\" >\n" +
+            "   </alpha>\n" +
+            "   \n" +
+            "   <alpha\n" +
+            "      android:startOffset=\"2000\"\n" +
+            "      android:fromAlpha=\"1\"\n" +
+            "      android:toAlpha=\"0\" \n" +
+            "      android:duration=\"2000\" >\n" +
+            "   </alpha>   \n" +
+            "\n" +
+            "</set>";
+
+    public static String blinkXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set xmlns:android=\"http://schemas.android.com/apk/res/android\">\n" +
+            "   <alpha android:fromAlpha=\"0.0\"\n" +
+            "      android:toAlpha=\"1.0\"\n" +
+            "      android:interpolator=\"@android:anim/accelerate_interpolator\"\n" +
+            "      android:duration=\"600\"\n" +
+            "      android:repeatMode=\"reverse\"\n" +
+            "      android:repeatCount=\"infinite\"/>\n" +
+            "</set>";
+
+    public static String moveXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set\n" +
+            "   xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "   android:interpolator=\"@android:anim/linear_interpolator\"\n" +
+            "   android:fillAfter=\"true\">\n" +
+            "   \n" +
+            "   <translate\n" +
+            "      android:fromXDelta=\"0%p\"\n" +
+            "      android:toXDelta=\"75%p\"\n" +
+            "      android:duration=\"800\" />\n" +
+            "</set>";
+
+    public static String slideXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<set xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "   android:fillAfter=\"true\" >\n" +
+            "   \n" +
+            "   <scale\n" +
+            "      android:duration=\"500\"\n" +
+            "      android:fromXScale=\"1.0\"\n" +
+            "      android:fromYScale=\"1.0\"\n" +
+            "      android:interpolator=\"@android:anim/linear_interpolator\"\n" +
+            "      android:toXScale=\"1.0\"\n" +
+            "      android:toYScale=\"0.0\" />\n" +
+            "</set>";
 }

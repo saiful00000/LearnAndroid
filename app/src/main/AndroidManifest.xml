@@ -9,7 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AudioCode" android:label="Audio Code"></activity>
+        <activity
+            android:name=".AnimationCode"
+            android:label="Animation"></activity>
+        <activity
+            android:name=".ClockCode"
+            android:label="CLock" />
+        <activity
+            android:name=".DateTimePickerCOde"
+            android:label="TimePicker" />
+        <activity
+            android:name=".DateTimePicker"
+            android:label="DateTime Picker" />
+        <activity
+            android:name=".Clock"
+            android:label="Clock" />
+        <activity
+            android:name=".SQLiteCode"
+            android:label="SQLite Code" />
+        <activity
+            android:name=".AudioCode"
+            android:label="Audio Code" />
         <activity
             android:name=".ToastCode"
             android:label="Toast Code" />

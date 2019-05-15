@@ -5,13 +5,206 @@ public class CodeJava {
     public static String intentJava = "";
     public static String containerJava = "";
     public static String menuJava = "";
-    public static String dateTimeJava = "";
-    public static String animationJava = "";
     public static String videoJava = "";
     public static String cameraJava = "";
     public static String fragmentJava = "";
     public static String mapJava = "";
-    public static String sqliteJava = "";
+
+    public static String animationJava = "package com.example.sairamkrishna.myapplication;\n" +
+            "\n" +
+            "import android.app.Activity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.view.animation.Animation;\n" +
+            "import android.view.animation.AnimationUtils;\n" +
+            "import android.widget.ImageView;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends Activity {\n" +
+            "   @Override\n" +
+            "   protected void onCreate(Bundle savedInstanceState) {\n" +
+            "      super.onCreate(savedInstanceState);\n" +
+            "      setContentView(R.layout.activity_main);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void clockwise(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), \n" +
+            "         R.anim.myanimation);\n" +
+            "      image.startAnimation(animation);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void zoom(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), \n" +
+            "         R.anim.clockwise);\n" +
+            "      image.startAnimation(animation1);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void fade(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation1 = \n" +
+            "         AnimationUtils.loadAnimation(getApplicationContext(), \n" +
+            "            R.anim.fade);\n" +
+            "      image.startAnimation(animation1);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void blink(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation1 = \n" +
+            "         AnimationUtils.loadAnimation(getApplicationContext(), \n" +
+            "            R.anim.blink);\n" +
+            "      image.startAnimation(animation1);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void move(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation1 = \n" +
+            "         AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);\n" +
+            "      image.startAnimation(animation1);\n" +
+            "   }\n" +
+            "   \n" +
+            "   public void slide(View view){\n" +
+            "      ImageView image = (ImageView)findViewById(R.id.imageView);\n" +
+            "      Animation animation1 = \n" +
+            "         AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide);\n" +
+            "      image.startAnimation(animation1);\n" +
+            "   }\n" +
+            "}";
+
+    public static String dateTimePickerJava = "package com.example.saifulislam.learnandroid;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "\n" +
+            "public class DateTimePicker extends AppCompatActivity {\n" +
+            "    \n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_date_time_picker);\n" +
+            "        \n" +
+            "    }\n" +
+            "}\n";
+
+    public static String clockJava = "package com.example.saifulislam.learnandroid;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "\n" +
+            "public class Clock extends AppCompatActivity {\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_clock);\n" +
+            "    }\n" +
+            "}\n";
+
+    public static String sqliteJava = "package com.example.sqlite;\n" +
+            "\n" +
+            "import android.content.ContentValues;\n" +
+            "import android.database.Cursor;\n" +
+            "import android.database.sqlite.SQLiteDatabase;\n" +
+            "import android.os.Handler;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.EditText;\n" +
+            "import android.widget.TextView;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "import com.example.sqlite.models.StudentDbHelper;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private EditText nameEt, idEt;\n" +
+            "    private Button insertBtn, fetchBtn, dltrowsBtn;\n" +
+            "    private TextView showInfoTv;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        nameEt = findViewById(R.id.name_et_id);\n" +
+            "        idEt = findViewById(R.id.id_et_id);\n" +
+            "        insertBtn = findViewById(R.id.insert_btn_id);\n" +
+            "        fetchBtn = findViewById(R.id.fetch_btn_id);\n" +
+            "        dltrowsBtn = findViewById(R.id.dlt_all_rows_btn_id);\n" +
+            "        showInfoTv = findViewById(R.id.showdata_tv_id);\n" +
+            "\n" +
+            "        final StudentDbHelper helper = new StudentDbHelper(this);\n" +
+            "\n" +
+            "\n" +
+            "        insertBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                String name = nameEt.getText().toString();\n" +
+            "                String id = idEt.getText().toString();\n" +
+            "\n" +
+            "                if (name.equals(\"\")) {\n" +
+            "                    Toast.makeText(MainActivity.this, \"Please enter your name.\", Toast.LENGTH_SHORT).show();\n" +
+            "                    return;\n" +
+            "                }\n" +
+            "                if (id.equals(\"\")) {\n" +
+            "                    Toast.makeText(MainActivity.this, \"Please enter your id.\", Toast.LENGTH_SHORT).show();\n" +
+            "                    return;\n" +
+            "                }\n" +
+            "                SQLiteDatabase database = helper.getWritableDatabase();\n" +
+            "                ContentValues values = new ContentValues();\n" +
+            "                values.put(\"sname\", name);\n" +
+            "                values.put(\"sid\",id);\n" +
+            "\n" +
+            "                long row = database.insert(\"stud_info\", null, values);\n" +
+            "\n" +
+            "                if (row != -1) {\n" +
+            "                    Toast.makeText(MainActivity.this, \"Data inserted succesfully.\", Toast.LENGTH_SHORT).show();\n" +
+            "                } else {\n" +
+            "                    Toast.makeText(MainActivity.this, \"Data is not inserted.\", Toast.LENGTH_SHORT).show();\n" +
+            "                }\n" +
+            "                nameEt.setText(\"\");\n" +
+            "                idEt.setText(\"\");\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        fetchBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                SQLiteDatabase database = helper.getReadableDatabase();\n" +
+            "                String[] projection = {\"sname\",\"sid\"};\n" +
+            "                final Cursor cursor = database.query(\"stud_info\", projection, null,\n" +
+            "                        null, null,null,null);\n" +
+            "                int count = cursor.getCount();\n" +
+            "                if (count == 0) {\n" +
+            "                    Toast.makeText(MainActivity.this, \"No data found\", Toast.LENGTH_SHORT).show();\n" +
+            "                    return;\n" +
+            "                }\n" +
+            "\n" +
+            "                Handler handler1 = new Handler();\n" +
+            "                for (int i = 0; i < count; i++) {\n" +
+            "                    final int finalI = i;\n" +
+            "                    handler1.postDelayed(new Runnable() {\n" +
+            "                        @Override\n" +
+            "                        public void run() {\n" +
+            "                            cursor.moveToPosition(finalI);\n" +
+            "                            showInfoTv.setText(cursor.getString(0) + \" \" + cursor.getString(1));\n" +
+            "                        }\n" +
+            "                    }, 1000 * i);\n" +
+            "                }\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        dltrowsBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                SQLiteDatabase database = helper.getWritableDatabase();\n" +
+            "                database.execSQL(\"DELETE FROM stud_info\");\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String auodioJava = "package com.example.audio;\n" +
             "\n" +

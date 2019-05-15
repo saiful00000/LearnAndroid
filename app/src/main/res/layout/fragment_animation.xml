@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AnimationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="res/anim/myanimation.xml."
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_one_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="res/anim/clockwise.xml."
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_two_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="res/anim/fade.xml."
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_three_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="res/anim/blink.xml."
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_four_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="res/anim/move.xml."
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_five_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="res/anim/slide.xml"
+                android:textColor="@color/black" />
+
+            <io.github.kbiakov.codeview.CodeView
+                android:id="@+id/codeView_six_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"></io.github.kbiakov.codeview.CodeView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

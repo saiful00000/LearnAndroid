@@ -2,47 +2,34 @@ package com.example.saifulislam.learnandroid;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
 
-public class DateTimeActivity extends AppCompatActivity {
+public class Clock extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private Button cloclBtn, dateTimePickerBtn;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_date_time);
+        setContentView(R.layout.activity_clock);
 
-        //setup the toolbar
         setUpTheToolbar();
 
-        cloclBtn = findViewById(R.id.clock_btn_id);
-        dateTimePickerBtn = findViewById(R.id.datetime_picker_btn_id);
-
-        cloclBtn.setOnClickListener(new View.OnClickListener() {
+        floatingActionButton = findViewById(R.id.fab_id);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DateTimeActivity.this, Clock.class);
-                startActivity(intent);
-            }
-        });
-
-        dateTimePickerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DateTimeActivity.this, DateTimePicker.class);
+                Intent intent = new Intent(Clock.this, ClockCode.class);
                 startActivity(intent);
             }
         });
     }
 
-
-    //setup the toolbar
     private void setUpTheToolbar() {
         toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);

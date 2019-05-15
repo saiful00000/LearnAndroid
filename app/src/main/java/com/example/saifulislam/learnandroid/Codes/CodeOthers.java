@@ -5,6 +5,29 @@ public class CodeOthers {
 
 
 
+    public static String SQLiteOtherCode1 = "package com.example.sqlite.models;\n" +
+            "\n" +
+            "import android.content.Context;\n" +
+            "import android.database.sqlite.SQLiteDatabase;\n" +
+            "import android.database.sqlite.SQLiteOpenHelper;\n" +
+            "\n" +
+            "public class StudentDbHelper extends SQLiteOpenHelper {\n" +
+            "\n" +
+            "    public StudentDbHelper(Context context) {\n" +
+            "        super(context, \"student.db\", null, 2);\n" +
+            "    }\n" +
+            "    \n" +
+            "    @Override\n" +
+            "    public void onCreate(SQLiteDatabase db) {\n" +
+            "        db.execSQL(\"create table stud_info (sname text, sid text)\");\n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {\n" +
+            "        db.execSQL(\"drop table if exists stud_info\");\n" +
+            "        onCreate(db);\n" +
+            "    }\n" +
+            "}\n";
 
 
     public static String toastOtherCode2 = "<shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

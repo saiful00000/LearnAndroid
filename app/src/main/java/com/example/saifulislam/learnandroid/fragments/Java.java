@@ -28,9 +28,7 @@ public class Java extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_java, container, false);
         CodeView codeView = view.findViewById(R.id.textViewCodeViewjava);
-        /*codeView.setCode(cdJava);
-        codeView.getOptions().setTheme(ColorTheme.DEFAULT);
-        codeView.getOptions().withFont(Font.Consolas);*/
+
         codeView.setOptions(Options.Default.get(context = container.getContext())
                 .withLanguage("java")
                 .withCode(cdJava)
