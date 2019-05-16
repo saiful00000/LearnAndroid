@@ -10,6 +10,33 @@ public class CodeJava {
     public static String fragmentJava = "";
     public static String mapJava = "";
 
+    public static String recyclerViewJava = "";
+
+    public static String listViewJava = "package com.example.listview;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.widget.ArrayAdapter;\n" +
+            "import android.widget.ListView;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private ListView listView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        String[] list = {\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\",\n" +
+            "                \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"};\n" +
+            "        listView = findViewById(R.id.listview_id);\n" +
+            "        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.list_content, R.id.tv_id, list);\n" +
+            "        listView.setAdapter(adapter);\n" +
+            "\n" +
+            "    }\n" +
+            "}\n";
+
     public static String animationJava = "package com.example.sairamkrishna.myapplication;\n" +
             "\n" +
             "import android.app.Activity;\n" +

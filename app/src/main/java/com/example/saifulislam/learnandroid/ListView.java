@@ -2,44 +2,42 @@ package com.example.saifulislam.learnandroid;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 
-public class ContainerActivity extends AppCompatActivity {
+public class ListView extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private Button listViewBtn, recyclerViewBtn;
+    private android.widget.ListView listView;
+    private FloatingActionButton floatingActionButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_container);
+        setContentView(R.layout.activity_list_view);
 
-        //setup the toolbar
         setUpTheToolbar();
 
-        listViewBtn = findViewById(R.id.listview_btn_id);
-        recyclerViewBtn = findViewById(R.id.recyclerview_btn_id);
+        listView = findViewById(R.id.listview_id);
+        floatingActionButton = findViewById(R.id.fab_id);
 
-        listViewBtn.setOnClickListener(new View.OnClickListener() {
+        String[] list = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
+                "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListView.this, R.layout.listview_content,R.id.textview_id, list);
+        listView.setAdapter(adapter);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContainerActivity.this, ListView.class);
+                Intent intent = new Intent(ListView.this,ListVIewCode.class);
                 startActivity(intent);
             }
         });
-
-        recyclerViewBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ContainerActivity.this, RecyclerView.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     //setup the toolbar
@@ -56,5 +54,4 @@ public class ContainerActivity extends AppCompatActivity {
             }
         });
     }
-
 }

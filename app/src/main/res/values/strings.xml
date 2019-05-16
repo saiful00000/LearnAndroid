@@ -76,7 +76,8 @@
     <string name="animation_description">Animations can add visual cues that notify users about whats going on in your app. They are especially
         useful when the UI changes state, such as when new content loads or new actions become available. Animations also add a polished look to
         your app, which gives it a higher quality look and feel.Android includes different animation APIs depending on what type of animation you want</string>
-    <string name="sample12"></string>
+    <string name="listview_description">Android ListView is a view which groups several items and display them in vertical scrollable list. The list items
+        are automatically inserted to the list using an Adapter that pulls content from a source such as an array or database.</string>
     <string name="sample14"></string>
     <string name="sample13"></string>
     <string name="sample15"></string>

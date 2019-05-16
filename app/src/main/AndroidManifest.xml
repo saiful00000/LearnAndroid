@@ -10,8 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ListVIewCode"
+            android:label="LisyView"></activity>
+        <activity
+            android:name=".RecyclerView"
+            android:label="RecyclerView" />
+        <activity
+            android:name=".ListView"
+            android:label="ListView" />
+        <activity
             android:name=".AnimationCode"
-            android:label="Animation"></activity>
+            android:label="Animation" />
         <activity
             android:name=".ClockCode"
             android:label="CLock" />

@@ -2,8 +2,23 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeOthers {
 
-
-
+    public static String listViewOtherXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"wrap_content\"\n" +
+            "    android:orientation=\"vertical\">\n" +
+            "    \n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"50dp\"\n" +
+            "        android:id=\"@+id/tv_id\"\n" +
+            "        android:text=\"Hello \"\n" +
+            "        android:gravity=\"center_vertical\"\n" +
+            "        android:textSize=\"20sp\"\n" +
+            "        android:padding=\"5dp\"\n" +
+            "        android:textStyle=\"bold\"\n" +
+            "        />\n" +
+            "</LinearLayout>";
 
     public static String SQLiteOtherCode1 = "package com.example.sqlite.models;\n" +
             "\n" +

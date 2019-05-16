@@ -9,6 +9,25 @@ public class CodeXML {
     public static String fragmentXML = "";
     public static String mapXML = "";
 
+    public static String recyclerViewXML = "";
+
+    public static String listViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <ListView\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:id=\"@+id/listview_id\">\n" +
+            "    </ListView>\n" +
+            "\n" +
+            "</LinearLayout>";
+
     public static String animationXML = "<LinearLayout\n" +
             "        android:layout_width=\"match_parent\"\n" +
             "        android:layout_weight=\"3\"\n" +
