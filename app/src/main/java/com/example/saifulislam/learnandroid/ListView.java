@@ -15,7 +15,6 @@ public class ListView extends AppCompatActivity {
     private android.widget.ListView listView;
     private FloatingActionButton floatingActionButton;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

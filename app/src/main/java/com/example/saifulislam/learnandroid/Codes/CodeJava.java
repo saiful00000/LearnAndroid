@@ -10,7 +10,35 @@ public class CodeJava {
     public static String fragmentJava = "";
     public static String mapJava = "";
 
-    public static String recyclerViewJava = "";
+    public static String recyclerViewJava = "package com.example.recyclerview;\n" +
+            "\n" +
+            "import android.content.Context;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.support.v7.widget.DividerItemDecoration;\n" +
+            "import android.support.v7.widget.LinearLayoutManager;\n" +
+            "import android.support.v7.widget.RecyclerView;\n" +
+            "import android.widget.LinearLayout;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private RecyclerView recyclerView;\n" +
+            "    Context context;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        recyclerView = findViewById(R.id.recyclerview_id);\n" +
+            "        DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),LinearLayout.VERTICAL);\n" +
+            "        recyclerView.addItemDecoration(mDividerItemDecoration);\n" +
+            "        recyclerView.setLayoutManager(new LinearLayoutManager(this));\n" +
+            "        String[] list = {\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\",\n" +
+            "                \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"};\n" +
+            "        recyclerView.setAdapter(new RecyclerAdapter(list));\n" +
+            "    }\n" +
+            "}\n";
 
     public static String listViewJava = "package com.example.listview;\n" +
             "\n" +

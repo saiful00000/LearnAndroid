@@ -20,7 +20,7 @@ import com.example.saifulislam.learnandroid.fragments.Manifesto;
 import com.example.saifulislam.learnandroid.fragments.Others;
 import com.example.saifulislam.learnandroid.fragments.XML;
 
-public class ListVIewCode extends AppCompatActivity {
+public class RecyclerViewCode extends AppCompatActivity {
 
     private Toolbar toolbar;
     private BottomNavigationView bottomNavigationView;
@@ -28,18 +28,21 @@ public class ListVIewCode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_view_code);
+        setContentView(R.layout.activity_recycler_view_code);
 
         setUpTheToolbar();
 
-        Description.header = "ListView";
-        Description.description = getString(R.string.listview_description);
-        Java.cdJava = CodeJava.listViewJava;
-        XML.cdXML = CodeXML.listViewXML;
-        Manifesto.cdMan = CodeManifest.listViewMan;
-        Others.headerOne = "listview_content.xml";
-        Others.codeOthersOne = CodeOthers.listViewOtherXML;
+        Description.header = "RecyclerVIew";
+        Description.description = getString(R.string.recyclerview_description);
+        Java.cdJava = CodeJava.recyclerViewJava;
+        XML.cdXML = CodeXML.recyclerViewXML;
+        Manifesto.cdMan = CodeManifest.recyclerViewMan;
+        Others.headerOne = "recyclerview_content.xml";
+        Others.codeOthersOne = CodeOthers.recyclerViewOtherXML;
         Others.languageOne = "xml";
+        Others.headerTwo = "RecyclerAdapter.java class";
+        Others.codeOthersTwo = CodeOthers.recyclerViewOtherJava;
+        Others.languageTow = "java";
         // set default fragment for fragment container
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Description()).commit();
 

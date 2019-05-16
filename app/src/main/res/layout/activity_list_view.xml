@@ -9,22 +9,19 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
     <ListView
+        android:id="@+id/listview_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="57dp"
         android:divider="@color/colorPrimaryDark"
-        android:dividerHeight="3dp"
-        android:id="@+id/listview_id"
-        >
-    </ListView>
+        android:dividerHeight="1dp"></ListView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_id"

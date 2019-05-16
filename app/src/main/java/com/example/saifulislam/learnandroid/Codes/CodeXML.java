@@ -9,7 +9,13 @@ public class CodeXML {
     public static String fragmentXML = "";
     public static String mapXML = "";
 
-    public static String recyclerViewXML = "";
+    public static String recyclerViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<android.support.v7.widget.RecyclerView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:id=\"@+id/recyclerview_id\">\n" +
+            "\n" +
+            "</android.support.v7.widget.RecyclerView>";
 
     public static String listViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

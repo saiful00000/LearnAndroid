@@ -68,9 +68,12 @@
     <string name="radiobutton_description">Radio buttons allow the user to select one option from a set. You should use radio buttons for optional sets that are
         mutually exclusive if you think that the user needs to see all available options side-by-side. If its not necessary to show all options side-by-side,
         use a spinner instead.</string>
-    <string name="toast_description">A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity
+    <string name="toast_description">A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the
+        message and the current activity
         remains visible and interactive. Toasts automatically disappear after a timeout.</string>
-    <string name="SQLite_description">SQLite is a opensource SQL database that stores data to a text file on a device. Android comes in with built in SQLite database implementation.SQLite supports all the relational database features. In order to access this database, you dont need to establish any kind of connections for it like JDBC,ODBC e.t.c</string>
+    <string name="SQLite_description">SQLite is a opensource SQL database that stores data to a text file on a device. Android comes in
+        with built in SQLite database implementation.SQLite supports all the relational database features. In order to access this database,
+        you dont need to establish any kind of connections for it like JDBC,ODBC e.t.c</string>
     <string name="timePicker_description">A widget for selecting the time of day, in either 24-hour or AM/PM mode.</string>
     <string name="clock_description">A clock providing access to the current instant, date and time using a time-zone.</string>
     <string name="animation_description">Animations can add visual cues that notify users about whats going on in your app. They are especially
@@ -78,7 +81,10 @@
         your app, which gives it a higher quality look and feel.Android includes different animation APIs depending on what type of animation you want</string>
     <string name="listview_description">Android ListView is a view which groups several items and display them in vertical scrollable list. The list items
         are automatically inserted to the list using an Adapter that pulls content from a source such as an array or database.</string>
-    <string name="sample14"></string>
+    <string name="recyclerview_description">RecyclerView is a ViewGroup added to the android studio as a successor of the GridView and
+        ListView. It is an improvement on both of them and can be found in the latest v-7 support packages. It has been created to make
+        possible construction of any lists with XML layouts as an item which can be customized vastly while improving on the efficiency
+        of ListViews and GridViews.</string>
     <string name="sample13"></string>
     <string name="sample15"></string>
     <string name="sample17"></string>

@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".RecyclerViewCode"
+            android:label="RecyclerView"></activity>
+        <activity
             android:name=".ListVIewCode"
-            android:label="LisyView"></activity>
+            android:label="LisyView" />
         <activity
             android:name=".RecyclerView"
             android:label="RecyclerView" />
