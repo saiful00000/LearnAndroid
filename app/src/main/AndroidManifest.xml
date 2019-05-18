@@ -10,8 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".PopUpMenuCode"
+            android:label="PopUp Menu"></activity>
+        <activity
+            android:name=".ContextMenuCode"
+            android:label="Context Menu" />
+        <activity
+            android:name=".PopUpMenu"
+            android:label="PopUp Menu" />
+        <activity
+            android:name=".ContextMenu"
+            android:label="ContextMenu" />
+        <activity
+            android:name=".OptionMenuCode"
+            android:label="Option Menu" />
+        <activity
+            android:name=".OptionMenu"
+            android:label="Option Menu" />
+        <activity
             android:name=".RecyclerViewCode"
-            android:label="RecyclerView"></activity>
+            android:label="RecyclerView" />
         <activity
             android:name=".ListVIewCode"
             android:label="LisyView" />

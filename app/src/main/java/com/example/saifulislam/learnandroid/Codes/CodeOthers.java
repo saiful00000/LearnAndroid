@@ -2,6 +2,36 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeOthers {
 
+    public static String popUpMenuOthers1 = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\">\n" +
+            "\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/add_id\"\n" +
+            "        android:title=\"Add\" />\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/remove_id\"\n" +
+            "        android:title=\"Remove\" />\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/details_id\"\n" +
+            "        android:title=\"Details\" />\n" +
+            "\n" +
+            "\n" +
+            "</menu>";
+
+    public static String optionMenuOthersXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/option_one_id\"\n" +
+            "        android:title=\"Option 1\" />\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/option_two_id\"\n" +
+            "        android:title=\"Option 2\" />\n" +
+            "    <item\n" +
+            "        android:id=\"@+id/option_three_id\"\n" +
+            "        android:title=\"Option 3\" />\n" +
+            "</menu>";
+
     public static String recyclerViewOtherJava = "package com.example.recyclerview;\n" +
             "\n" +
             "import android.support.annotation.NonNull;\n" +

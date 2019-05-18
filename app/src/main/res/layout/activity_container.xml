@@ -31,8 +31,8 @@
             android:layout_height="wrap_content"
             android:text="ListView"
             android:textAllCaps="false"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/white"
+            android:background="@color/button_color"
+            android:textColor="@color/black"
             />
         <Button
             android:id="@+id/recyclerview_btn_id"
@@ -40,8 +40,8 @@
             android:layout_height="wrap_content"
             android:text="RecyclerView"
             android:layout_marginTop="15dp"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/white"
+            android:background="@color/button_color"
+            android:textColor="@color/black"
             />
 
 

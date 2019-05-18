@@ -2,58 +2,56 @@ package com.example.saifulislam.learnandroid;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
-public class MenuActivity extends AppCompatActivity {
+public class PopUpMenu extends AppCompatActivity {
 
     private Toolbar toolbar;
-    Button optionMenuBtn, contextMenuBtn, popupMenuBtn;
+    private FloatingActionButton floatingActionButton;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_pop_up_menu);
 
-        //setup the toolbar
         setUpTheToolbar();
 
-        optionMenuBtn = findViewById(R.id.option_menu_id);
-        contextMenuBtn = findViewById(R.id.context_menu_id);
-        popupMenuBtn = findViewById(R.id.popup_menu_id);
-
-        optionMenuBtn.setOnClickListener(new View.OnClickListener() {
+        button = findViewById(R.id.popup_btn_id);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, OptionMenu.class);
-                startActivity(intent);
+                PopupMenu popupMenu = new PopupMenu(PopUpMenu.this, button);
+                popupMenu.getMenuInflater().inflate(R.menu.popup_menu,popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(PopUpMenu.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
+                });
+                popupMenu.show();
             }
         });
 
-        contextMenuBtn.setOnClickListener(new View.OnClickListener() {
+        floatingActionButton = findViewById(R.id.fab_id);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, ContextMenu.class);
+                Intent intent = new Intent(PopUpMenu.this, PopUpMenuCode.class);
                 startActivity(intent);
             }
         });
-
-        popupMenuBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuActivity.this, PopUpMenu.class);
-                startActivity(intent);
-            }
-        });
-
     }
+
 
     //setup the toolbar
     private void setUpTheToolbar() {
@@ -70,5 +68,4 @@ public class MenuActivity extends AppCompatActivity {
         });
 
     }
-
 }

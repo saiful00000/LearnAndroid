@@ -85,10 +85,17 @@
         ListView. It is an improvement on both of them and can be found in the latest v-7 support packages. It has been created to make
         possible construction of any lists with XML layouts as an item which can be customized vastly while improving on the efficiency
         of ListViews and GridViews.</string>
-    <string name="sample13"></string>
-    <string name="sample15"></string>
-    <string name="sample17"></string>
+    <string name="option_menu_description">The options menu is the primary collection of menu items for an activity.
+        Its where you should place actions that have a global impact on the app, such as "Search," "Compose email," and "Settings."</string>
+    <string name="contextmenu_description">A context menu is a floating menu that appears when the user performs a long-click on an element.
+        It provides actions that affect the selected content or context fra</string>
+    <string name="popupmenu_description">A popup menu displays a list of items in a vertical list thats anchored to the view that invoked the\
+        menu. It is good for providing an overflow of actions that relate to specific content or to provide options for a second part of a command.</string>
     <string name="sample16"></string>
     <string name="sample27"></string>
+    <string name="sample18"></string>
+    <string name="sample19"></string>
+    <string name="sample20"></string>
+    <string name="sample21"></string>
 
 </resources>

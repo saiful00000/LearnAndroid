@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:layout_height="match_parent"
     android:weightSum="5"
-    tools:context=".CommonWidgetActivity">
+    tools:context=".PopUpMenu">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -15,37 +14,22 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
+        android:theme="@style/MyToolbarStyle"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_weight="4"
         android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="0dp">
 
         <Button
-            android:id="@+id/toast_button_id"
+            android:id="@+id/popup_btn_id"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="@color/fab_color"
-            android:padding="5dp"
-            android:text="Toast"
+            android:background="@color/button_color"
+            android:text="Click for PopUp menu"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/custom_toast_button_id"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@color/fab_color"
-            android:padding="5dp"
-            android:text="Custom Toast"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+            />
 
     </LinearLayout>
 

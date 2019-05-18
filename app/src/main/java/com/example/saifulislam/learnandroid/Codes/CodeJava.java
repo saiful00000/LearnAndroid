@@ -4,11 +4,146 @@ public class CodeJava {
 
     public static String intentJava = "";
     public static String containerJava = "";
-    public static String menuJava = "";
-    public static String videoJava = "";
     public static String cameraJava = "";
     public static String fragmentJava = "";
     public static String mapJava = "";
+
+    public static String popUpMenuJava = "package com.example.popupmenu;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.MenuItem;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.PopupMenu;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    public Button button;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        button = findViewById(R.id.popup_btn_id);\n" +
+            "        button.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                PopupMenu popupMenu = new PopupMenu(MainActivity.this, button);\n" +
+            "                popupMenu.getMenuInflater().inflate(R.menu.popup_menu,popupMenu.getMenu());\n" +
+            "                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {\n" +
+            "                    @Override\n" +
+            "                    public boolean onMenuItemClick(MenuItem item) {\n" +
+            "                        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();\n" +
+            "                        return true;\n" +
+            "                    }\n" +
+            "                });\n" +
+            "                popupMenu.show();\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
+
+    public static String contextMenuJava = "package com.example.contextmenu;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.ContextMenu;\n" +
+            "import android.view.MenuItem;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.ArrayAdapter;\n" +
+            "import android.widget.ListView;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private ListView listView;\n" +
+            "    \n" +
+            "    String list[] = {\"Java\", \"Python\", \"C\", \"C++\", \"C#\", \"JavaScript\"};\n" +
+            "    \n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "        \n" +
+            "        listView = findViewById(R.id.listview_id);\n" +
+            "        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);\n" +
+            "        listView.setAdapter(adapter);\n" +
+            "        \n" +
+            "        registerForContextMenu(listView);\n" +
+            "        \n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public boolean onContextItemSelected(MenuItem item) {\n" +
+            "        String title = \"\";\n" +
+            "        if (item.getTitle() == \"Delete\")\n" +
+            "            title = item.getTitle().toString();\n" +
+            "        else if(item.getTitle() == \"Details\")\n" +
+            "            title = item.getTitle().toString();\n" +
+            "        else if(item.getTitle() == \"Favourite\")\n" +
+            "            title = item.getTitle().toString();\n" +
+            "        else \n" +
+            "            return false;\n" +
+            "        Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();\n" +
+            "        return true;\n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {\n" +
+            "        super.onCreateContextMenu(menu, v, menuInfo);\n" +
+            "        menu.add(0, v.getId(), 0, \"Delete\");\n" +
+            "        menu.add(0, v.getId(), 0, \"Details\");\n" +
+            "        menu.add(0, v.getId(), 0, \"Favourite\");\n" +
+            "    }\n" +
+            "}\n";
+
+    public static String optionMenuJava = "package com.example.menu;\n" +
+            "\n" +
+            "import android.graphics.Bitmap;\n" +
+            "import android.graphics.Canvas;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.Menu;\n" +
+            "import android.view.MenuInflater;\n" +
+            "import android.view.MenuItem;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "    \n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public boolean onCreateOptionsMenu(Menu menu) {\n" +
+            "        MenuInflater inflater = getMenuInflater();\n" +
+            "        inflater.inflate(R.menu.game_menu, menu);\n" +
+            "        return true;\n" +
+            "    }\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public boolean onOptionsItemSelected(MenuItem item) {\n" +
+            "        // Handle item selection\n" +
+            "        switch (item.getItemId()) {\n" +
+            "            case R.id.option_one_id:\n" +
+            "                Toast.makeText(this, \"Option one choosen.\", Toast.LENGTH_SHORT).show();\n" +
+            "                return true;\n" +
+            "            case R.id.option_two_id:\n" +
+            "                Toast.makeText(this, \"Option two choosen.\", Toast.LENGTH_SHORT).show();\n" +
+            "                return true;\n" +
+            "            case R.id.option_three_id:\n" +
+            "                Toast.makeText(this, \"Option three choosen.\", Toast.LENGTH_SHORT).show();\n" +
+            "                return true;\n" +
+            "            default:\n" +
+            "                return super.onOptionsItemSelected(item);\n" +
+            "        }\n" +
+            "    }\n" +
+            "}\n";
 
     public static String recyclerViewJava = "package com.example.recyclerview;\n" +
             "\n" +

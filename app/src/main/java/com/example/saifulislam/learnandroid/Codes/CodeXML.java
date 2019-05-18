@@ -2,12 +2,66 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeXML {
     public static String intentXML = "";
-    public static String containerXML = "";
-    public static String menuXML = "";
-    public static String videoXML = "";
     public static String cameraXML = "";
     public static String fragmentXML = "";
     public static String mapXML = "";
+
+    public static String popUpMenuXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/popup_btn_id\"\n" +
+            "        android:layout_width=\"200dp\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"CLick for PopUp Menu\"\n" +
+            "        android:textAllCaps=\"false\" />\n" +
+            "\n" +
+            "</LinearLayout>";
+
+    public static String contextMenuXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:padding=\"10dp\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Long press on Any one item.\"\n" +
+            "        android:textColor=\"#000000\"\n" +
+            "        android:textStyle=\"bold\"\n" +
+            "        />\n" +
+            "\n" +
+            "    <ListView\n" +
+            "        android:layout_marginTop=\"10dp\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:id=\"@+id/listview_id\"\n" +
+            "        >\n" +
+            "        \n" +
+            "    </ListView>\n" +
+            "\n" +
+            "</LinearLayout>";
+
+    public static String optionMenuXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "</LinearLayout>";
 
     public static String recyclerViewXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<android.support.v7.widget.RecyclerView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

@@ -4,33 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".CommonWidgetActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center"
-        >
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/option_menu_id"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Menu Activity"
-            android:textSize="40dp"
-            />
+            android:background="@color/button_color"
+            android:text="Option Menu"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/context_menu_id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/button_color"
+            android:text="Context Menu"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/popup_menu_id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/button_color"
+            android:text="PopUp Menu"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 

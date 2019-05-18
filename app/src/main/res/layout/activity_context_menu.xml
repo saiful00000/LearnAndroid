@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:weightSum="5"
-    tools:context=".CommonWidgetActivity">
+    tools:context=".ContextMenu">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -21,41 +20,31 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/toast_button_id"
-            android:layout_width="200dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/fab_color"
-            android:padding="5dp"
-            android:text="Toast"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/custom_toast_button_id"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@color/fab_color"
-            android:padding="5dp"
-            android:text="Custom Toast"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:text="Long press on Any one item."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <ListView
+            android:id="@+id/listview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+        </ListView>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="bottom"
         android:layout_weight="1"
         android:gravity="bottom"
         android:orientation="vertical">
-
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_id"
             android:layout_width="wrap_content"
@@ -63,7 +52,8 @@
             android:layout_gravity="end|bottom"
             android:layout_margin="16dp"
             android:src="@drawable/codewhile"
-            app:backgroundTint="@color/fab_color" />
+            app:backgroundTint="#0277BD" />
+
     </LinearLayout>
 
 </LinearLayout>
