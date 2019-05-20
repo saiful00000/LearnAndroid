@@ -2,6 +2,20 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeOthers {
 
+    public static String explicitIntentJavaOther1 = "package com.example.explicitintent;\n" +
+            "\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "\n" +
+            "public class Main2Activity extends AppCompatActivity {\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main2);\n" +
+            "    }\n" +
+            "}\n";
+
     public static String popUpMenuOthers1 = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\">\n" +
             "\n" +

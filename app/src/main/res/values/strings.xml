@@ -91,8 +91,11 @@
         It provides actions that affect the selected content or context fra</string>
     <string name="popupmenu_description">A popup menu displays a list of items in a vertical list thats anchored to the view that invoked the\
         menu. It is good for providing an overflow of actions that relate to specific content or to provide options for a second part of a command.</string>
-    <string name="sample16"></string>
-    <string name="sample27"></string>
+    <string name="explicitintent_description">Android Explicit intent specifies the component to be invoked from activity. In other words, we can call another
+        activity in android by explicit intent.We can also pass the information from one activity to another using explicit intent.</string>
+    <string name="implicitintent_description">Implicit intents do not name a specific component, but instead declare a general action to perform,
+        which allows a component from another app to handle it. For example, if you want to show the user a location on a map, you can use an 
+        implicit intent to request that another capable app show a specified location on a map.</string>
     <string name="sample18"></string>
     <string name="sample19"></string>
     <string name="sample20"></string>

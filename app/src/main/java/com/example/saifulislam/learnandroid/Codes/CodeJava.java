@@ -2,11 +2,99 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeJava {
 
-    public static String intentJava = "";
     public static String containerJava = "";
     public static String cameraJava = "";
     public static String fragmentJava = "";
     public static String mapJava = "";
+
+    public static String implicitIntentJava = "package com.example.implicitintet;\n" +
+            "\n" +
+            "import android.Manifest;\n" +
+            "import android.content.Intent;\n" +
+            "import android.content.pm.PackageManager;\n" +
+            "import android.net.Uri;\n" +
+            "import android.support.annotation.NonNull;\n" +
+            "import android.support.v4.app.ActivityCompat;\n" +
+            "import android.support.v4.content.ContextCompat;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.EditText;\n" +
+            "import android.widget.Toast;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private static final int REQUEST_CALL = 1;\n" +
+            "    private Button callBtn, smsBtn;\n" +
+            "    private EditText phoneNumberEt, smsBodyEt;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        callBtn = findViewById(R.id.call_btn_id);\n" +
+            "        smsBtn = findViewById(R.id.sms_btn_id);\n" +
+            "        phoneNumberEt = findViewById(R.id.phonenumber_et_id);\n" +
+            "        smsBodyEt = findViewById(R.id.sms_et_id);\n" +
+            "\n" +
+            "        callBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                //makePhoneCall();\n" +
+            "                String phone = phoneNumberEt.getText().toString().trim();\n" +
+            "                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.fromParts(\"tel\", phone, null));\n" +
+            "                if (ActivityCompat.checkSelfPermission(MainActivity.this,\n" +
+            "                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {\n" +
+            "                    return;\n" +
+            "                }\n" +
+            "                startActivity(callIntent);\n" +
+            "                phoneNumberEt.setText(\"\");\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        smsBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                String sms = smsBodyEt.getText().toString();\n" +
+            "                Intent smsIntent = new Intent(Intent.ACTION_VIEW);\n" +
+            "                smsIntent.setData(Uri.parse(\"sms:\"));\n" +
+            "                smsIntent.putExtra(\"sms_body\",sms);\n" +
+            "                startActivity(smsIntent);\n" +
+            "                smsBodyEt.setText(\"\");\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
+
+    public static String explicitIntentJava = "package com.example.explicitintent;\n" +
+            "\n" +
+            "import android.content.Intent;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private Button goAnotherActivityBtn;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        goAnotherActivityBtn = findViewById(R.id.explicitIntentBtn_id);\n" +
+            "        goAnotherActivityBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                Intent intent = new Intent(MainActivity.this, Main2Activity.class);\n" +
+            "                startActivity(intent);\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "}\n";
 
     public static String popUpMenuJava = "package com.example.popupmenu;\n" +
             "\n" +

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.saifulislam.learnandroid">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ImplicitIntentCode"
+            android:label="Implicit Intent"></activity>
+        <activity
+            android:name=".ImplicitIntent"
+            android:label="Implicit Intent" />
+        <activity android:name=".ExplicitIntent_2" />
+        <activity
+            android:name=".ExplicitIntentCOde"
+            android:label="Explicit Intent" />
+        <activity
+            android:name=".ExplicitIntent"
+            android:label="Explicit Intent" />
+        <activity
             android:name=".PopUpMenuCode"
-            android:label="PopUp Menu"></activity>
+            android:label="PopUp Menu" />
         <activity
             android:name=".ContextMenuCode"
             android:label="Context Menu" />

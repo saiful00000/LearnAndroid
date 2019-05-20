@@ -6,6 +6,80 @@ public class CodeXML {
     public static String fragmentXML = "";
     public static String mapXML = "";
 
+    public static String implicitIntentXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:padding=\"20dp\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Your phone number.\"\n" +
+            "        android:textColor=\"#000000\" />\n" +
+            "\n" +
+            "    <EditText\n" +
+            "        android:id=\"@+id/phonenumber_et_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:hint=\"Phone number\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/call_btn_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Call Now\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:textAllCaps=\"false\" />\n" +
+            "\n" +
+            "    <TextView\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:layout_marginTop=\"20dp\"\n" +
+            "        android:text=\"Enter your sms.\"\n" +
+            "        android:textColor=\"#000000\" />\n" +
+            "\n" +
+            "    <EditText\n" +
+            "        android:id=\"@+id/sms_et_id\"\n" +
+            "        android:layout_width=\"match_parent\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:hint=\"SMS body\" />\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:id=\"@+id/sms_btn_id\"\n" +
+            "        android:layout_width=\"wrap_content\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Send SMS\"\n" +
+            "        android:layout_gravity=\"center\"\n" +
+            "        android:textAllCaps=\"false\" />\n" +
+            "\n" +
+            "</LinearLayout>";
+
+    public static String explicitIntentXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:layout_width=\"200dp\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:text=\"Click for Change Activity\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:id=\"@+id/explicitIntentBtn_id\"\n" +
+            "        />\n" +
+            "\n" +
+            "</LinearLayout>";
+
     public static String popUpMenuXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
             "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
