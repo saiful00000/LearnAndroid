@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CameraCode"
+            android:label="Camera"></activity>
+        <activity
             android:name=".ImplicitIntentCode"
-            android:label="Implicit Intent"></activity>
+            android:label="Implicit Intent" />
         <activity
             android:name=".ImplicitIntent"
             android:label="Implicit Intent" />

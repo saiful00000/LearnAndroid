@@ -3,9 +3,56 @@ package com.example.saifulislam.learnandroid.Codes;
 public class CodeJava {
 
     public static String containerJava = "";
-    public static String cameraJava = "";
     public static String fragmentJava = "";
     public static String mapJava = "";
+
+    public static String cameraJava = "package com.example.camera;\n" +
+            "\n" +
+            "import android.content.Intent;\n" +
+            "import android.graphics.Bitmap;\n" +
+            "import android.provider.MediaStore;\n" +
+            "import android.support.annotation.Nullable;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.view.View;\n" +
+            "import android.widget.Button;\n" +
+            "import android.widget.ImageView;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    private Button openCameraBtn;\n" +
+            "    private ImageView imageView;\n" +
+            "    private String currentPhotoPath;\n" +
+            "\n" +
+            "\n" +
+            "    private static final int REQUEST_TAKE_PHOTO = 1;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        openCameraBtn = findViewById(R.id.open_btn_id);\n" +
+            "        imageView = findViewById(R.id.imageview_id);\n" +
+            "\n" +
+            "        openCameraBtn.setOnClickListener(new View.OnClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onClick(View v) {\n" +
+            "                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);\n" +
+            "                startActivityForResult(intent, REQUEST_TAKE_PHOTO);\n" +
+            "            }\n" +
+            "        });\n" +
+            "    }\n" +
+            "\n" +
+            "    // set image into imageview\n" +
+            "    @Override\n" +
+            "    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {\n" +
+            "        if (requestCode == REQUEST_TAKE_PHOTO && resultCode == RESULT_OK) {\n" +
+            "            Bitmap imageBitmap = (Bitmap) data.getExtras().get(\"data\");\n" +
+            "            imageView.setImageBitmap(imageBitmap);\n" +
+            "        }\n" +
+            "    }\n" +
+            "}";
 
     public static String implicitIntentJava = "package com.example.implicitintet;\n" +
             "\n" +

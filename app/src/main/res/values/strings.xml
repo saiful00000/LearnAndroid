@@ -96,7 +96,8 @@
     <string name="implicitintent_description">Implicit intents do not name a specific component, but instead declare a general action to perform,
         which allows a component from another app to handle it. For example, if you want to show the user a location on a map, you can use an 
         implicit intent to request that another capable app show a specified location on a map.</string>
-    <string name="sample18"></string>
+    <string name="camera_description">The Android framework includes support for various cameras and camera
+        features available on devices, allowing you to capture pictures and videos in your applications.</string>
     <string name="sample19"></string>
     <string name="sample20"></string>
     <string name="sample21"></string>

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
 
-    tools:context=".CommonWidgetActivity">
+    tools:context=".AodioActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"

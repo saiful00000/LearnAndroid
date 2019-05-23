@@ -2,9 +2,35 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeXML {
     public static String intentXML = "";
-    public static String cameraXML = "";
     public static String fragmentXML = "";
     public static String mapXML = "";
+
+    public static String cameraXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"vertical\"\n" +
+            "    android:gravity=\"center\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <Button\n" +
+            "        android:layout_width=\"200dp\"\n" +
+            "        android:layout_height=\"wrap_content\"\n" +
+            "        android:textAllCaps=\"false\"\n" +
+            "        android:textStyle=\"bold\"\n" +
+            "        android:text=\"Open Camera\"\n" +
+            "        android:id=\"@+id/open_btn_id\"\n" +
+            "        />\n" +
+            "\n" +
+            "    <ImageView\n" +
+            "        android:layout_width=\"200dp\"\n" +
+            "        android:layout_height=\"200dp\"\n" +
+            "        android:id=\"@+id/imageview_id\"\n" +
+            "        android:src=\"@android:color/black\"\n" +
+            "        />\n" +
+            "</LinearLayout>";
 
     public static String implicitIntentXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
