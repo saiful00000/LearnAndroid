@@ -26,20 +26,20 @@
 
         <Button
             android:id="@+id/button_one_id"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@color/button_one"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
             android:text="Button 1"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_two_id"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/button_two"
+            android:background="@color/button_color"
             android:text="Button 2"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

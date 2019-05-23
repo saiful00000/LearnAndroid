@@ -54,13 +54,13 @@
 
             <Button
                 android:id="@+id/button_id"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:background="@color/fab_color"
+                android:background="@color/button_color"
                 android:text="Check"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
 

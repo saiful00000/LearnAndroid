@@ -60,7 +60,9 @@
                     android:layout_height="wrap_content"
                     android:onClick="clockwise"
                     android:layout_gravity="center"
-                    android:text="zoom" />
+                    android:textAllCaps="false"
+                    android:background="@color/button_color"
+                    android:text="Zoom" />
 
                 <Button
                     android:id="@+id/button2"
@@ -68,7 +70,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:onClick="zoom"
-                    android:text="clockwise" />
+                    android:textAllCaps="false"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/button_color"
+                    android:text="Clockwise" />
 
             </LinearLayout>
 
@@ -84,16 +89,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textAllCaps="false"
                     android:onClick="fade"
-                    android:text="fade" />
+                    android:background="@color/button_color"
+                    android:text="Fade" />
 
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textAllCaps="false"
                     android:layout_gravity="center"
                     android:onClick="blink"
-                    android:text="blink" />
+                    android:layout_marginTop="5dp"
+                    android:background="@color/button_color"
+                    android:text="Blink" />
 
             </LinearLayout>
 
@@ -110,15 +120,20 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:onClick="move"
-                    android:text="move" />
+                    android:textAllCaps="false"
+                    android:background="@color/button_color"
+                    android:text="Move" />
 
                 <Button
+                    android:layout_marginTop="5dp"
                     android:id="@+id/button6"
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="slide"
-                    android:text="slide" />
+                    android:textAllCaps="false"
+                    android:background="@color/button_color"
+                    android:text="Slide" />
 
             </LinearLayout>
 

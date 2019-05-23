@@ -95,13 +95,13 @@ public class ImplicitIntent extends AppCompatActivity {
                 }
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" + "0377778888"));
+                callIntent.setData(Uri.parse("tel:" + phoneNumberEt.getText().toString().trim()));
                 startActivity(callIntent);
 
             }
             else {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" + "0377778888"));
+                callIntent.setData(Uri.parse("tel:" + phoneNumberEt.getText().toString().trim()));
                 startActivity(callIntent);
             }
         }
