@@ -2,6 +2,83 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeOthers {
 
+    public static String fragmentOther1 = "// first of all we create two Fragment class called ListFragment and DetailsFragment\n" +
+            "// and then we create a list view on fragment_list.xml layout file\n" +
+            "// and create a TextView on fragment_details.xml layout file\n" +
+            "\n" +
+            "// note : new Dont show the xml files of fragments.\n" +
+            "\n" +
+            "\n" +
+            "// ListFragment.Java  class\n" +
+            "\n" +
+            "package com.example.fragment;\n" +
+            "\n" +
+            "import android.os.Bundle;\n" +
+            "import android.support.v4.app.Fragment;\n" +
+            "import android.view.LayoutInflater;\n" +
+            "import android.view.View;\n" +
+            "import android.view.ViewGroup;\n" +
+            "import android.widget.AdapterView;\n" +
+            "import android.widget.ArrayAdapter;\n" +
+            "import android.widget.ListView;\n" +
+            "\n" +
+            "public class ListFragment extends Fragment {\n" +
+            "\n" +
+            "    private ListView listView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public View onCreateView(LayoutInflater inflater, ViewGroup container,\n" +
+            "                             Bundle savedInstanceState) {\n" +
+            "        View view = inflater.inflate(R.layout.fragment_list, container, false);\n" +
+            "\n" +
+            "        listView = view.findViewById(R.id.listview_id);\n" +
+            "        final String[] list = {\"Dhaka\", \"Washington\", \"London\", \"Paris\", \"Bercelona\", \"Dublin\"};\n" +
+            "        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, list);\n" +
+            "        listView.setAdapter(adapter);\n" +
+            "\n" +
+            "        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {\n" +
+            "            @Override\n" +
+            "            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {\n" +
+            "                DetailsFragment.setTextViewText(list[position]);\n" +
+            "                listView.setSelector(android.R.color.holo_purple);\n" +
+            "            }\n" +
+            "        });\n" +
+            "\n" +
+            "        return view;\n" +
+            "    }\n" +
+            "}\n" +
+            "\n" +
+            "\n" +
+            "// DetailsFragment.java class\n" +
+            "\n" +
+            "package com.example.fragment;\n" +
+            "\n" +
+            "import android.content.Context;\n" +
+            "import android.net.Uri;\n" +
+            "import android.os.Bundle;\n" +
+            "import android.support.v4.app.Fragment;\n" +
+            "import android.view.LayoutInflater;\n" +
+            "import android.view.View;\n" +
+            "import android.view.ViewGroup;\n" +
+            "import android.widget.TextView;\n" +
+            "\n" +
+            "public class DetailsFragment extends Fragment {\n" +
+            "\n" +
+            "    private static TextView textView;\n" +
+            "\n" +
+            "    @Override\n" +
+            "    public View onCreateView(LayoutInflater inflater, ViewGroup container,\n" +
+            "                             Bundle savedInstanceState) {\n" +
+            "        View view = inflater.inflate(R.layout.fragment_details, container, false);\n" +
+            "        textView = view.findViewById(R.id.textview_id);\n" +
+            "        return view;\n" +
+            "    }\n" +
+            "\n" +
+            "    public static void setTextViewText(String txt) {\n" +
+            "        textView.setText(txt);\n" +
+            "    }\n" +
+            "}";
+
     public static String explicitIntentJavaOther1 = "package com.example.explicitintent;\n" +
             "\n" +
             "import android.support.v7.app.AppCompatActivity;\n" +

@@ -15,7 +15,6 @@
         <item>Video</item>
         <item>Camera</item>
         <item>Fragment</item>
-        <item>Map</item>
         <item>SQlite</item>
         <item>Toast</item>
     </string-array>
@@ -98,7 +97,10 @@
         implicit intent to request that another capable app show a specified location on a map.</string>
     <string name="camera_description">The Android framework includes support for various cameras and camera
         features available on devices, allowing you to capture pictures and videos in your applications.</string>
-    <string name="sample19"></string>
+    <string name="fragment_description">A Fragment represents a behavior or a portion of user interface in a FragmentActivity. You can
+        combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can
+        think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which
+        you can add or remove while the activity is running (sort of like a "sub activity" that you can reuse in different activities).</string>
     <string name="sample20"></string>
     <string name="sample21"></string>
 

@@ -1,9 +1,31 @@
 package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeXML {
-    public static String intentXML = "";
-    public static String fragmentXML = "";
-    public static String mapXML = "";
+
+    public static String fragmentXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+            "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+            "    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n" +
+            "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+            "    android:layout_width=\"match_parent\"\n" +
+            "    android:layout_height=\"match_parent\"\n" +
+            "    android:orientation=\"horizontal\"\n" +
+            "    android:weightSum=\"2\"\n" +
+            "    tools:context=\".MainActivity\">\n" +
+            "\n" +
+            "    <FrameLayout\n" +
+            "        android:id=\"@+id/container_one\"\n" +
+            "        android:layout_width=\"0dp\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:layout_weight=\"1\"></FrameLayout>\n" +
+            "\n" +
+            "    <FrameLayout\n" +
+            "        android:layout_width=\"0dp\"\n" +
+            "        android:layout_height=\"match_parent\"\n" +
+            "        android:layout_weight=\"1\"\n" +
+            "        android:id=\"@+id/container_two\"\n" +
+            "        ></FrameLayout>\n" +
+            "\n" +
+            "</LinearLayout>";
 
     public static String cameraXML = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
             "<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +

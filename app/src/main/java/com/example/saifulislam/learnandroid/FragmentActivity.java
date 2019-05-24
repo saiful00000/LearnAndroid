@@ -1,14 +1,19 @@
 package com.example.saifulislam.learnandroid;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.example.saifulislam.learnandroid.fragments.ListFragment;
+
 public class FragmentActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +22,19 @@ public class FragmentActivity extends AppCompatActivity {
 
         //setup the toolbar
         setUpTheToolbar();
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_one_id, new ListFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_two_id, new DetailsFragment()).commit();
+
+        floatingActionButton = findViewById(R.id.fab_id);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragmentActivity.this, FragmentCode.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

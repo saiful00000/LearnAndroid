@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         final String[] contents = getResources().getStringArray(R.array.content_list);
         int[] icons = {R.drawable.main_widget, R.drawable.main_intent, R.drawable.main_container, R.drawable.main_menu,
                 R.drawable.main_datetime, R.drawable.main_animation, R.drawable.main_audio,
-                R.drawable.main_video, R.drawable.main_camera, R.drawable.main_fragment, R.drawable.main_map,
+                R.drawable.main_video, R.drawable.main_camera, R.drawable.main_fragment,
                 R.drawable.main_sqlite, R.drawable.main_toast};
         MainListViewdapter mainListViewdapter = new MainListViewdapter(this, contents, icons);
         mainListview.setAdapter(mainListViewdapter);

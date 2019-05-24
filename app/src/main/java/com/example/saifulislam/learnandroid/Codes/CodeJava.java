@@ -2,9 +2,23 @@ package com.example.saifulislam.learnandroid.Codes;
 
 public class CodeJava {
 
-    public static String containerJava = "";
-    public static String fragmentJava = "";
-    public static String mapJava = "";
+    public static String fragmentJava = "package com.example.fragment;\n" +
+            "\n" +
+            "import android.support.v4.app.Fragment;\n" +
+            "import android.support.v7.app.AppCompatActivity;\n" +
+            "import android.os.Bundle;\n" +
+            "\n" +
+            "public class MainActivity extends AppCompatActivity {\n" +
+            "\n" +
+            "    @Override\n" +
+            "    protected void onCreate(Bundle savedInstanceState) {\n" +
+            "        super.onCreate(savedInstanceState);\n" +
+            "        setContentView(R.layout.activity_main);\n" +
+            "\n" +
+            "        getSupportFragmentManager().beginTransaction().replace(R.id.container_one, new ListFragment()).commit();\n" +
+            "        getSupportFragmentManager().beginTransaction().replace(R.id.container_two, new DetailsFragment()).commit();\n" +
+            "    }\n" +
+            "}\n";
 
     public static String cameraJava = "package com.example.camera;\n" +
             "\n" +

@@ -1,37 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".CommonWidgetActivity">
+    android:orientation="vertical"
+    tools:context=".FragmentActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/HeaderBar"
         android:elevation="4dp"
-        android:theme="@style/myToolbarTheam"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/myToolbarTheam"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        >
+        android:layout_marginTop="57dp"
+        android:orientation="horizontal"
+        android:weightSum="31">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fragment Activity"
-            android:textSize="40dp"
-            />
+        <FrameLayout
+            android:id="@+id/fragment_container_one_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"></FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_color" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container_two_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"></FrameLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/codewhile"
+        app:backgroundTint="@color/fab_color" />
+
+</FrameLayout>
