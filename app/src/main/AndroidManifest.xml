@@ -189,9 +189,6 @@
             android:name=".FragmentActivity"
             android:label="Fragment" />
         <activity
-            android:name=".MapActivity"
-            android:label="Map" />
-        <activity
             android:name=".SQLiteActivity"
             android:label="SQLite" />
         <activity

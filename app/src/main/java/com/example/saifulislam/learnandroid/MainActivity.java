@@ -144,14 +144,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case 10:
-                intent = new Intent(MainActivity.this, MapActivity.class);
-                startActivity(intent);
-                break;
-            case 11:
                 intent = new Intent(MainActivity.this, SQLiteActivity.class);
                 startActivity(intent);
                 break;
-            case 12:
+            case 11:
                 intent = new Intent(MainActivity.this, ToastActivity.class);
                 startActivity(intent);
                 break;
